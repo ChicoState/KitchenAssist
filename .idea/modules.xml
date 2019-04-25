@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/kitchen_assist.iml" filepath="$PROJECT_DIR$/kitchen_assist.iml" />
-      <module fileurl="file://$PROJECT_DIR$/android/kitchen_assist_android.iml" filepath="$PROJECT_DIR$/android/kitchen_assist_android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/KitchenAssist.iml" filepath="$PROJECT_DIR$/.idea/KitchenAssist.iml" />
     </modules>
   </component>
 </project>

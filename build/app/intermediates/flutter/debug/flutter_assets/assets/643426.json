@@ -1,0 +1,3632 @@
+{
+  "vegetarian": true,
+  "vegan": false,
+  "glutenFree": false,
+  "dairyFree": false,
+  "veryHealthy": true,
+  "cheap": false,
+  "veryPopular": false,
+  "sustainable": false,
+  "weightWatcherSmartPoints": 392,
+  "gaps": "no",
+  "lowFodmap": false,
+  "ketogenic": false,
+  "whole30": false,
+  "sourceUrl": "https://www.foodista.com/recipe/DBJYD6L8/fresh-apple-cake-with-caramel-sauce",
+  "spoonacularSourceUrl": "https://spoonacular.com/fresh-apple-cake-with-caramel-sauce-643426",
+  "aggregateLikes": 9,
+  "spoonacularScore": 90,
+  "healthScore": 78,
+  "creditText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "sourceName": "Foodista",
+  "pricePerServing": 1158.05,
+  "extendedIngredients": [
+    {
+      "id": 19335,
+      "aisle": "Baking",
+      "image": "sugar-in-bowl.png",
+      "consitency": "solid",
+      "name": "sugar",
+      "original": "2 c.s sugar",
+      "originalString": "2 c.s sugar",
+      "originalName": "s sugar",
+      "amount": 2,
+      "unit": "c",
+      "meta": [],
+      "metaInformation": [],
+      "measures": {
+        "us": {
+          "amount": 2,
+          "unitShort": "cups",
+          "unitLong": "cups"
+        },
+        "metric": {
+          "amount": 473.176,
+          "unitShort": "g",
+          "unitLong": "grams"
+        }
+      }
+    },
+    {
+      "id": 4513,
+      "aisle": "Oil, Vinegar, Salad Dressing",
+      "image": "vegetable-oil.jpg",
+      "consitency": "liquid",
+      "name": "vegetable oil",
+      "original": "1 c. vegetable oil",
+      "originalString": "1 c. vegetable oil",
+      "originalName": "vegetable oil",
+      "amount": 1,
+      "unit": "c",
+      "meta": [],
+      "metaInformation": [],
+      "measures": {
+        "us": {
+          "amount": 1,
+          "unitShort": "cup",
+          "unitLong": "cup"
+        },
+        "metric": {
+          "amount": 236.588,
+          "unitShort": "g",
+          "unitLong": "grams"
+        }
+      }
+    },
+    {
+      "id": 1123,
+      "aisle": "Milk, Eggs, Other Dairy",
+      "image": "egg.png",
+      "consitency": "solid",
+      "name": "eggs",
+      "original": "3 eggs",
+      "originalString": "3 eggs",
+      "originalName": "eggs",
+      "amount": 3,
+      "unit": "",
+      "meta": [],
+      "metaInformation": [],
+      "measures": {
+        "us": {
+          "amount": 3,
+          "unitShort": "",
+          "unitLong": ""
+        },
+        "metric": {
+          "amount": 3,
+          "unitShort": "",
+          "unitLong": ""
+        }
+      }
+    },
+    {
+      "id": 20081,
+      "aisle": "Baking",
+      "image": "flour.png",
+      "consitency": "solid",
+      "name": "flour",
+      "original": "3 c.s sifted flour",
+      "originalString": "3 c.s sifted flour",
+      "originalName": "s sifted flour",
+      "amount": 3,
+      "unit": "c",
+      "meta": [
+        "sifted"
+      ],
+      "metaInformation": [
+        "sifted"
+      ],
+      "measures": {
+        "us": {
+          "amount": 3,
+          "unitShort": "cups",
+          "unitLong": "cups"
+        },
+        "metric": {
+          "amount": 709.764,
+          "unitShort": "g",
+          "unitLong": "grams"
+        }
+      }
+    },
+    {
+      "id": 14146,
+      "aisle": "Beverages",
+      "image": "soda-can.jpg",
+      "consitency": "solid",
+      "name": "diet soda",
+      "original": "1 tsp. soda",
+      "originalString": "1 tsp. soda",
+      "originalName": "soda",
+      "amount": 1,
+      "unit": "tsp",
+      "meta": [],
+      "metaInformation": [],
+      "measures": {
+        "us": {
+          "amount": 1,
+          "unitShort": "tsp",
+          "unitLong": "teaspoon"
+        },
+        "metric": {
+          "amount": 1,
+          "unitShort": "tsp",
+          "unitLong": "teaspoon"
+        }
+      }
+    },
+    {
+      "id": 2047,
+      "aisle": "Spices and Seasonings",
+      "image": "salt.jpg",
+      "consitency": "solid",
+      "name": "salt",
+      "original": "1 tsp. salt",
+      "originalString": "1 tsp. salt",
+      "originalName": "salt",
+      "amount": 1,
+      "unit": "tsp",
+      "meta": [],
+      "metaInformation": [],
+      "measures": {
+        "us": {
+          "amount": 1,
+          "unitShort": "tsp",
+          "unitLong": "teaspoon"
+        },
+        "metric": {
+          "amount": 1,
+          "unitShort": "tsp",
+          "unitLong": "teaspoon"
+        }
+      }
+    },
+    {
+      "id": 2010,
+      "aisle": "Spices and Seasonings",
+      "image": "cinnamon.jpg",
+      "consitency": "solid",
+      "name": "cinnamon",
+      "original": "1 tsp. cinnamon",
+      "originalString": "1 tsp. cinnamon",
+      "originalName": "cinnamon",
+      "amount": 1,
+      "unit": "tsp",
+      "meta": [],
+      "metaInformation": [],
+      "measures": {
+        "us": {
+          "amount": 1,
+          "unitShort": "tsp",
+          "unitLong": "teaspoon"
+        },
+        "metric": {
+          "amount": 1,
+          "unitShort": "tsp",
+          "unitLong": "teaspoon"
+        }
+      }
+    },
+    {
+      "id": 2050,
+      "aisle": "Baking",
+      "image": "vanilla.jpg",
+      "consitency": "solid",
+      "name": "vanilla",
+      "original": "2 tsp.s vanilla",
+      "originalString": "2 tsp.s vanilla",
+      "originalName": "s vanilla",
+      "amount": 2,
+      "unit": "tsp",
+      "meta": [],
+      "metaInformation": [],
+      "measures": {
+        "us": {
+          "amount": 2,
+          "unitShort": "tsps",
+          "unitLong": "teaspoons"
+        },
+        "metric": {
+          "amount": 2,
+          "unitShort": "tsps",
+          "unitLong": "teaspoons"
+        }
+      }
+    },
+    {
+      "id": 9003,
+      "aisle": "Produce",
+      "image": "apple.jpg",
+      "consitency": "solid",
+      "name": "apples",
+      "original": "3 c.s peeled, chopped apples",
+      "originalString": "3 c.s peeled, chopped apples",
+      "originalName": "s peeled, chopped apples",
+      "amount": 3,
+      "unit": "c",
+      "meta": [
+        "peeled",
+        "chopped"
+      ],
+      "metaInformation": [
+        "peeled",
+        "chopped"
+      ],
+      "measures": {
+        "us": {
+          "amount": 3,
+          "unitShort": "cups",
+          "unitLong": "cups"
+        },
+        "metric": {
+          "amount": 709.764,
+          "unitShort": "g",
+          "unitLong": "grams"
+        }
+      }
+    },
+    {
+      "id": 12104,
+      "aisle": "Produce",
+      "image": "coconut.jpg",
+      "consitency": "solid",
+      "name": "coconut",
+      "original": "2 c.s coconut",
+      "originalString": "2 c.s coconut",
+      "originalName": "s coconut",
+      "amount": 2,
+      "unit": "c",
+      "meta": [],
+      "metaInformation": [],
+      "measures": {
+        "us": {
+          "amount": 2,
+          "unitShort": "cups",
+          "unitLong": "cups"
+        },
+        "metric": {
+          "amount": 473.176,
+          "unitShort": "g",
+          "unitLong": "grams"
+        }
+      }
+    },
+    {
+      "id": 9087,
+      "aisle": "Dried Fruits;Produce",
+      "image": "dates.jpg",
+      "consitency": "solid",
+      "name": "dates",
+      "original": "1 c. chopped dates or coconut",
+      "originalString": "1 c. chopped dates or coconut",
+      "originalName": "chopped dates or coconut",
+      "amount": 1,
+      "unit": "c",
+      "meta": [
+        "chopped"
+      ],
+      "metaInformation": [
+        "chopped"
+      ],
+      "measures": {
+        "us": {
+          "amount": 1,
+          "unitShort": "cup",
+          "unitLong": "cup"
+        },
+        "metric": {
+          "amount": 236.588,
+          "unitShort": "g",
+          "unitLong": "grams"
+        }
+      }
+    },
+    {
+      "id": 12142,
+      "aisle": "Nuts;Baking",
+      "image": "pecans.jpg",
+      "consitency": "solid",
+      "name": "pecans",
+      "original": "1 c. chopped pecans",
+      "originalString": "1 c. chopped pecans",
+      "originalName": "chopped pecans",
+      "amount": 1,
+      "unit": "c",
+      "meta": [
+        "chopped"
+      ],
+      "metaInformation": [
+        "chopped"
+      ],
+      "measures": {
+        "us": {
+          "amount": 1,
+          "unitShort": "cup",
+          "unitLong": "cup"
+        },
+        "metric": {
+          "amount": 236.588,
+          "unitShort": "g",
+          "unitLong": "grams"
+        }
+      }
+    },
+    {
+      "id": 19334,
+      "aisle": "Baking",
+      "image": "light-brown-sugar.jpg",
+      "consitency": "solid",
+      "name": "brown sugar",
+      "original": "1 c. packed brown sugar",
+      "originalString": "1 c. packed brown sugar",
+      "originalName": "packed brown sugar",
+      "amount": 1,
+      "unit": "c",
+      "meta": [
+        "packed"
+      ],
+      "metaInformation": [
+        "packed"
+      ],
+      "measures": {
+        "us": {
+          "amount": 1,
+          "unitShort": "cup",
+          "unitLong": "cup"
+        },
+        "metric": {
+          "amount": 236.588,
+          "unitShort": "g",
+          "unitLong": "grams"
+        }
+      }
+    },
+    {
+      "id": 1001,
+      "aisle": "Milk, Eggs, Other Dairy",
+      "image": "butter-sliced.jpg",
+      "consitency": "solid",
+      "name": "butter",
+      "original": "1/2 c. butter",
+      "originalString": "1/2 c. butter",
+      "originalName": "butter",
+      "amount": 0.5,
+      "unit": "c",
+      "meta": [],
+      "metaInformation": [],
+      "measures": {
+        "us": {
+          "amount": 0.5,
+          "unitShort": "cups",
+          "unitLong": "cups"
+        },
+        "metric": {
+          "amount": 118.294,
+          "unitShort": "g",
+          "unitLong": "grams"
+        }
+      }
+    },
+    {
+      "id": 1077,
+      "aisle": "Milk, Eggs, Other Dairy",
+      "image": "milk.png",
+      "consitency": "liquid",
+      "name": "milk",
+      "original": "1/2 c. milk",
+      "originalString": "1/2 c. milk",
+      "originalName": "milk",
+      "amount": 0.5,
+      "unit": "c",
+      "meta": [],
+      "metaInformation": [],
+      "measures": {
+        "us": {
+          "amount": 0.5,
+          "unitShort": "cups",
+          "unitLong": "cups"
+        },
+        "metric": {
+          "amount": 118.294,
+          "unitShort": "g",
+          "unitLong": "grams"
+        }
+      }
+    }
+  ],
+  "id": 643426,
+  "title": "Fresh Apple Cake With Caramel Sauce",
+  "readyInMinutes": 45,
+  "servings": 1,
+  "image": "https://spoonacular.com/recipeImages/643426-556x370.jpg",
+  "imageType": "jpg",
+  "nutrition": {
+    "nutrients": [
+      {
+        "title": "Calories",
+        "amount": 8595.83,
+        "unit": "cal",
+        "percentOfDailyNeeds": 429.79
+      },
+      {
+        "title": "Fat",
+        "amount": 456.34,
+        "unit": "g",
+        "percentOfDailyNeeds": 702.05
+      },
+      {
+        "title": "Saturated Fat",
+        "amount": 296.75,
+        "unit": "g",
+        "percentOfDailyNeeds": 1854.7
+      },
+      {
+        "title": "Carbohydrates",
+        "amount": 1112.09,
+        "unit": "g",
+        "percentOfDailyNeeds": 370.7
+      },
+      {
+        "title": "Sugar",
+        "amount": 767.48,
+        "unit": "g",
+        "percentOfDailyNeeds": 852.75
+      },
+      {
+        "title": "Cholesterol",
+        "amount": 747.27,
+        "unit": "mg",
+        "percentOfDailyNeeds": 249.09
+      },
+      {
+        "title": "Sodium",
+        "amount": 3488.77,
+        "unit": "mg",
+        "percentOfDailyNeeds": 151.69
+      },
+      {
+        "title": "Alcohol",
+        "amount": 2.89,
+        "unit": "g",
+        "percentOfDailyNeeds": 16.05
+      },
+      {
+        "title": "Protein",
+        "amount": 79.49,
+        "unit": "g",
+        "percentOfDailyNeeds": 158.97
+      },
+      {
+        "title": "Manganese",
+        "amount": 10.61,
+        "unit": "mg",
+        "percentOfDailyNeeds": 530.35
+      },
+      {
+        "title": "Selenium",
+        "amount": 202.76,
+        "unit": "µg",
+        "percentOfDailyNeeds": 289.66
+      },
+      {
+        "title": "Vitamin B1",
+        "amount": 3.96,
+        "unit": "mg",
+        "percentOfDailyNeeds": 263.95
+      },
+      {
+        "title": "Fiber",
+        "amount": 56.17,
+        "unit": "g",
+        "percentOfDailyNeeds": 224.68
+      },
+      {
+        "title": "Folate",
+        "amount": 862.71,
+        "unit": "µg",
+        "percentOfDailyNeeds": 215.68
+      },
+      {
+        "title": "Vitamin B2",
+        "amount": 3.14,
+        "unit": "mg",
+        "percentOfDailyNeeds": 184.82
+      },
+      {
+        "title": "Iron",
+        "amount": 30.12,
+        "unit": "mg",
+        "percentOfDailyNeeds": 167.34
+      },
+      {
+        "title": "Copper",
+        "amount": 3.1,
+        "unit": "mg",
+        "percentOfDailyNeeds": 155.09
+      },
+      {
+        "title": "Phosphorus",
+        "amount": 1394.96,
+        "unit": "mg",
+        "percentOfDailyNeeds": 139.5
+      },
+      {
+        "title": "Vitamin B3",
+        "amount": 26.94,
+        "unit": "mg",
+        "percentOfDailyNeeds": 134.7
+      },
+      {
+        "title": "Vitamin E",
+        "amount": 15.21,
+        "unit": "mg",
+        "percentOfDailyNeeds": 101.43
+      },
+      {
+        "title": "Potassium",
+        "amount": 3437.82,
+        "unit": "mg",
+        "percentOfDailyNeeds": 98.22
+      },
+      {
+        "title": "Magnesium",
+        "amount": 388.19,
+        "unit": "mg",
+        "percentOfDailyNeeds": 97.05
+      },
+      {
+        "title": "Vitamin A",
+        "amount": 4027.12,
+        "unit": "IU",
+        "percentOfDailyNeeds": 80.54
+      },
+      {
+        "title": "Zinc",
+        "amount": 11.87,
+        "unit": "mg",
+        "percentOfDailyNeeds": 79.14
+      },
+      {
+        "title": "Vitamin K",
+        "amount": 80.49,
+        "unit": "µg",
+        "percentOfDailyNeeds": 76.66
+      },
+      {
+        "title": "Vitamin B5",
+        "amount": 6.98,
+        "unit": "mg",
+        "percentOfDailyNeeds": 69.78
+      },
+      {
+        "title": "Calcium",
+        "amount": 681.96,
+        "unit": "mg",
+        "percentOfDailyNeeds": 68.2
+      },
+      {
+        "title": "Vitamin B6",
+        "amount": 1.22,
+        "unit": "mg",
+        "percentOfDailyNeeds": 61.19
+      },
+      {
+        "title": "Vitamin D",
+        "amount": 5.93,
+        "unit": "µg",
+        "percentOfDailyNeeds": 39.52
+      },
+      {
+        "title": "Vitamin B12",
+        "amount": 1.92,
+        "unit": "µg",
+        "percentOfDailyNeeds": 31.95
+      },
+      {
+        "title": "Vitamin C",
+        "amount": 24.31,
+        "unit": "mg",
+        "percentOfDailyNeeds": 29.46
+      }
+    ],
+    "ingredients": [
+      {
+        "name": "sugar",
+        "amount": 2,
+        "unit": "c",
+        "nutrients": [
+          {
+            "name": "Potassium",
+            "amount": 8,
+            "unit": "mg"
+          },
+          {
+            "name": "Cholesterol",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Fiber",
+            "amount": 0,
+            "unit": "g"
+          },
+          {
+            "name": "Fluoride",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin B3",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Caffeine",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Phosphorus",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Calories",
+            "amount": 1548,
+            "unit": "cal"
+          },
+          {
+            "name": "Vitamin B6",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin K",
+            "amount": 0,
+            "unit": "µg"
+          },
+          {
+            "name": "Sodium",
+            "amount": 4,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin A",
+            "amount": 0,
+            "unit": "IU"
+          },
+          {
+            "name": "Vitamin C",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Carbohydrates",
+            "amount": 399.92,
+            "unit": "g"
+          },
+          {
+            "name": "Vitamin B1",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin E",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Iron",
+            "amount": 0.2,
+            "unit": "mg"
+          },
+          {
+            "name": "Saturated Fat",
+            "amount": 0,
+            "unit": "g"
+          },
+          {
+            "name": "Protein",
+            "amount": 0,
+            "unit": "g"
+          },
+          {
+            "name": "Magnesium",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Zinc",
+            "amount": 0.04,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin B5",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Manganese",
+            "amount": 0.02,
+            "unit": "mg"
+          },
+          {
+            "name": "Mono Unsaturated Fat",
+            "amount": 0,
+            "unit": "g"
+          },
+          {
+            "name": "Fat",
+            "amount": 0,
+            "unit": "g"
+          },
+          {
+            "name": "Alcohol",
+            "amount": 0,
+            "unit": "g"
+          },
+          {
+            "name": "Copper",
+            "amount": 0.03,
+            "unit": "mg"
+          },
+          {
+            "name": "Folic Acid",
+            "amount": 0,
+            "unit": "µg"
+          },
+          {
+            "name": "Calcium",
+            "amount": 4,
+            "unit": "mg"
+          },
+          {
+            "name": "Folate",
+            "amount": 0,
+            "unit": "µg"
+          },
+          {
+            "name": "Selenium",
+            "amount": 2.4,
+            "unit": "µg"
+          },
+          {
+            "name": "Vitamin D",
+            "amount": 0,
+            "unit": "µg"
+          },
+          {
+            "name": "Vitamin B12",
+            "amount": 0,
+            "unit": "µg"
+          },
+          {
+            "name": "Choline",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Poly Unsaturated Fat",
+            "amount": 0,
+            "unit": "g"
+          },
+          {
+            "name": "Vitamin B2",
+            "amount": 0.08,
+            "unit": "mg"
+          },
+          {
+            "name": "Sugar",
+            "amount": 399.2,
+            "unit": "g"
+          }
+        ]
+      },
+      {
+        "name": "vegetable oil",
+        "amount": 1,
+        "unit": "c",
+        "nutrients": [
+          {
+            "name": "Potassium",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Cholesterol",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Fiber",
+            "amount": 0,
+            "unit": "g"
+          },
+          {
+            "name": "Vitamin B3",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Caffeine",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Phosphorus",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Calories",
+            "amount": 1879.16,
+            "unit": "cal"
+          },
+          {
+            "name": "Vitamin B6",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin K",
+            "amount": 53.85,
+            "unit": "µg"
+          },
+          {
+            "name": "Sodium",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin A",
+            "amount": 0,
+            "unit": "IU"
+          },
+          {
+            "name": "Vitamin C",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Carbohydrates",
+            "amount": 0,
+            "unit": "g"
+          },
+          {
+            "name": "Vitamin B1",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin E",
+            "amount": 8.31,
+            "unit": "mg"
+          },
+          {
+            "name": "Iron",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Saturated Fat",
+            "amount": 177.67,
+            "unit": "g"
+          },
+          {
+            "name": "Protein",
+            "amount": 0,
+            "unit": "g"
+          },
+          {
+            "name": "Magnesium",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Zinc",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin B5",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Manganese",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Mono Unsaturated Fat",
+            "amount": 24.85,
+            "unit": "g"
+          },
+          {
+            "name": "Fat",
+            "amount": 218,
+            "unit": "g"
+          },
+          {
+            "name": "Alcohol",
+            "amount": 0,
+            "unit": "g"
+          },
+          {
+            "name": "Copper",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Folic Acid",
+            "amount": 0,
+            "unit": "µg"
+          },
+          {
+            "name": "Calcium",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Folate",
+            "amount": 0,
+            "unit": "µg"
+          },
+          {
+            "name": "Selenium",
+            "amount": 0,
+            "unit": "µg"
+          },
+          {
+            "name": "Vitamin D",
+            "amount": 0,
+            "unit": "µg"
+          },
+          {
+            "name": "Vitamin B12",
+            "amount": 0,
+            "unit": "µg"
+          },
+          {
+            "name": "Choline",
+            "amount": 0.44,
+            "unit": "mg"
+          },
+          {
+            "name": "Poly Unsaturated Fat",
+            "amount": 3.49,
+            "unit": "g"
+          },
+          {
+            "name": "Vitamin B2",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Sugar",
+            "amount": 0,
+            "unit": "g"
+          }
+        ]
+      },
+      {
+        "name": "eggs",
+        "amount": 3,
+        "unit": "",
+        "nutrients": [
+          {
+            "name": "Potassium",
+            "amount": 182.16,
+            "unit": "mg"
+          },
+          {
+            "name": "Cholesterol",
+            "amount": 491.04,
+            "unit": "mg"
+          },
+          {
+            "name": "Fiber",
+            "amount": 0,
+            "unit": "g"
+          },
+          {
+            "name": "Trans Fat",
+            "amount": 0.05,
+            "unit": "g"
+          },
+          {
+            "name": "Fluoride",
+            "amount": 1.45,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin B3",
+            "amount": 0.1,
+            "unit": "mg"
+          },
+          {
+            "name": "Caffeine",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Phosphorus",
+            "amount": 261.36,
+            "unit": "mg"
+          },
+          {
+            "name": "Calories",
+            "amount": 188.76,
+            "unit": "cal"
+          },
+          {
+            "name": "Vitamin B6",
+            "amount": 0.22,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin K",
+            "amount": 0.4,
+            "unit": "µg"
+          },
+          {
+            "name": "Sodium",
+            "amount": 187.44,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin A",
+            "amount": 712.8,
+            "unit": "IU"
+          },
+          {
+            "name": "Vitamin C",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Carbohydrates",
+            "amount": 0.95,
+            "unit": "g"
+          },
+          {
+            "name": "Vitamin B1",
+            "amount": 0.05,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin E",
+            "amount": 1.39,
+            "unit": "mg"
+          },
+          {
+            "name": "Iron",
+            "amount": 2.31,
+            "unit": "mg"
+          },
+          {
+            "name": "Saturated Fat",
+            "amount": 4.13,
+            "unit": "g"
+          },
+          {
+            "name": "Protein",
+            "amount": 16.58,
+            "unit": "g"
+          },
+          {
+            "name": "Magnesium",
+            "amount": 15.84,
+            "unit": "mg"
+          },
+          {
+            "name": "Zinc",
+            "amount": 1.7,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin B5",
+            "amount": 2.02,
+            "unit": "mg"
+          },
+          {
+            "name": "Manganese",
+            "amount": 0.04,
+            "unit": "mg"
+          },
+          {
+            "name": "Mono Unsaturated Fat",
+            "amount": 4.83,
+            "unit": "g"
+          },
+          {
+            "name": "Fat",
+            "amount": 12.55,
+            "unit": "g"
+          },
+          {
+            "name": "Alcohol",
+            "amount": 0,
+            "unit": "g"
+          },
+          {
+            "name": "Copper",
+            "amount": 0.1,
+            "unit": "mg"
+          },
+          {
+            "name": "Folic Acid",
+            "amount": 0,
+            "unit": "µg"
+          },
+          {
+            "name": "Calcium",
+            "amount": 73.92,
+            "unit": "mg"
+          },
+          {
+            "name": "Folate",
+            "amount": 62.04,
+            "unit": "µg"
+          },
+          {
+            "name": "Selenium",
+            "amount": 40.52,
+            "unit": "µg"
+          },
+          {
+            "name": "Vitamin D",
+            "amount": 2.64,
+            "unit": "µg"
+          },
+          {
+            "name": "Vitamin B12",
+            "amount": 1.17,
+            "unit": "µg"
+          },
+          {
+            "name": "Choline",
+            "amount": 387.82,
+            "unit": "mg"
+          },
+          {
+            "name": "Poly Unsaturated Fat",
+            "amount": 2.52,
+            "unit": "g"
+          },
+          {
+            "name": "Vitamin B2",
+            "amount": 0.6,
+            "unit": "mg"
+          },
+          {
+            "name": "Sugar",
+            "amount": 0.49,
+            "unit": "g"
+          }
+        ]
+      },
+      {
+        "name": "flour",
+        "amount": 3,
+        "unit": "c",
+        "nutrients": [
+          {
+            "name": "Potassium",
+            "amount": 401.25,
+            "unit": "mg"
+          },
+          {
+            "name": "Cholesterol",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Fiber",
+            "amount": 10.13,
+            "unit": "g"
+          },
+          {
+            "name": "Vitamin B3",
+            "amount": 22.14,
+            "unit": "mg"
+          },
+          {
+            "name": "Caffeine",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Phosphorus",
+            "amount": 405,
+            "unit": "mg"
+          },
+          {
+            "name": "Calories",
+            "amount": 1365,
+            "unit": "cal"
+          },
+          {
+            "name": "Vitamin B6",
+            "amount": 0.17,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin K",
+            "amount": 1.13,
+            "unit": "µg"
+          },
+          {
+            "name": "Sodium",
+            "amount": 7.5,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin A",
+            "amount": 0,
+            "unit": "IU"
+          },
+          {
+            "name": "Vitamin C",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Carbohydrates",
+            "amount": 286.16,
+            "unit": "g"
+          },
+          {
+            "name": "Vitamin B1",
+            "amount": 2.94,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin E",
+            "amount": 0.23,
+            "unit": "mg"
+          },
+          {
+            "name": "Iron",
+            "amount": 17.4,
+            "unit": "mg"
+          },
+          {
+            "name": "Saturated Fat",
+            "amount": 0.58,
+            "unit": "g"
+          },
+          {
+            "name": "Protein",
+            "amount": 38.74,
+            "unit": "g"
+          },
+          {
+            "name": "Magnesium",
+            "amount": 82.5,
+            "unit": "mg"
+          },
+          {
+            "name": "Zinc",
+            "amount": 2.63,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin B5",
+            "amount": 1.64,
+            "unit": "mg"
+          },
+          {
+            "name": "Manganese",
+            "amount": 2.56,
+            "unit": "mg"
+          },
+          {
+            "name": "Mono Unsaturated Fat",
+            "amount": 0.33,
+            "unit": "g"
+          },
+          {
+            "name": "Fat",
+            "amount": 3.68,
+            "unit": "g"
+          },
+          {
+            "name": "Alcohol",
+            "amount": 0,
+            "unit": "g"
+          },
+          {
+            "name": "Copper",
+            "amount": 0.54,
+            "unit": "mg"
+          },
+          {
+            "name": "Folic Acid",
+            "amount": 577.5,
+            "unit": "µg"
+          },
+          {
+            "name": "Calcium",
+            "amount": 56.25,
+            "unit": "mg"
+          },
+          {
+            "name": "Folate",
+            "amount": 686.25,
+            "unit": "µg"
+          },
+          {
+            "name": "Selenium",
+            "amount": 127.13,
+            "unit": "µg"
+          },
+          {
+            "name": "Vitamin D",
+            "amount": 0,
+            "unit": "µg"
+          },
+          {
+            "name": "Vitamin B12",
+            "amount": 0,
+            "unit": "µg"
+          },
+          {
+            "name": "Choline",
+            "amount": 39,
+            "unit": "mg"
+          },
+          {
+            "name": "Poly Unsaturated Fat",
+            "amount": 1.55,
+            "unit": "g"
+          },
+          {
+            "name": "Vitamin B2",
+            "amount": 1.85,
+            "unit": "mg"
+          },
+          {
+            "name": "Sugar",
+            "amount": 1.01,
+            "unit": "g"
+          }
+        ]
+      },
+      {
+        "name": "diet soda",
+        "amount": 1,
+        "unit": "tsp",
+        "nutrients": [
+          {
+            "name": "Potassium",
+            "amount": 0.35,
+            "unit": "mg"
+          },
+          {
+            "name": "Cholesterol",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Fiber",
+            "amount": 0,
+            "unit": "g"
+          },
+          {
+            "name": "Fluoride",
+            "amount": 2.56,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin B3",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Caffeine",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Phosphorus",
+            "amount": 0.49,
+            "unit": "mg"
+          },
+          {
+            "name": "Calories",
+            "amount": 0.05,
+            "unit": "cal"
+          },
+          {
+            "name": "Vitamin B6",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin K",
+            "amount": 0,
+            "unit": "µg"
+          },
+          {
+            "name": "Sodium",
+            "amount": 0.2,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin A",
+            "amount": 0,
+            "unit": "IU"
+          },
+          {
+            "name": "Vitamin C",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Carbohydrates",
+            "amount": 0.01,
+            "unit": "g"
+          },
+          {
+            "name": "Vitamin B1",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin E",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Iron",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Saturated Fat",
+            "amount": 0,
+            "unit": "g"
+          },
+          {
+            "name": "Protein",
+            "amount": 0.01,
+            "unit": "g"
+          },
+          {
+            "name": "Magnesium",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Zinc",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin B5",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Manganese",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Mono Unsaturated Fat",
+            "amount": 0,
+            "unit": "g"
+          },
+          {
+            "name": "Fat",
+            "amount": 0,
+            "unit": "g"
+          },
+          {
+            "name": "Alcohol",
+            "amount": 0,
+            "unit": "g"
+          },
+          {
+            "name": "Copper",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Folic Acid",
+            "amount": 0,
+            "unit": "µg"
+          },
+          {
+            "name": "Calcium",
+            "amount": 0.15,
+            "unit": "mg"
+          },
+          {
+            "name": "Folate",
+            "amount": 0,
+            "unit": "µg"
+          },
+          {
+            "name": "Selenium",
+            "amount": 0,
+            "unit": "µg"
+          },
+          {
+            "name": "Vitamin D",
+            "amount": 0,
+            "unit": "µg"
+          },
+          {
+            "name": "Vitamin B12",
+            "amount": 0,
+            "unit": "µg"
+          },
+          {
+            "name": "Choline",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Poly Unsaturated Fat",
+            "amount": 0,
+            "unit": "g"
+          },
+          {
+            "name": "Vitamin B2",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Sugar",
+            "amount": 0,
+            "unit": "g"
+          }
+        ]
+      },
+      {
+        "name": "salt",
+        "amount": 1,
+        "unit": "tsp",
+        "nutrients": [
+          {
+            "name": "Potassium",
+            "amount": 0.48,
+            "unit": "mg"
+          },
+          {
+            "name": "Cholesterol",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Fiber",
+            "amount": 0,
+            "unit": "g"
+          },
+          {
+            "name": "Fluoride",
+            "amount": 0.12,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin B3",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Caffeine",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Phosphorus",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Calories",
+            "amount": 0,
+            "unit": "cal"
+          },
+          {
+            "name": "Vitamin B6",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin K",
+            "amount": 0,
+            "unit": "µg"
+          },
+          {
+            "name": "Sodium",
+            "amount": 2325.48,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin A",
+            "amount": 0,
+            "unit": "IU"
+          },
+          {
+            "name": "Vitamin C",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Carbohydrates",
+            "amount": 0,
+            "unit": "g"
+          },
+          {
+            "name": "Vitamin B1",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin E",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Iron",
+            "amount": 0.02,
+            "unit": "mg"
+          },
+          {
+            "name": "Saturated Fat",
+            "amount": 0,
+            "unit": "g"
+          },
+          {
+            "name": "Protein",
+            "amount": 0,
+            "unit": "g"
+          },
+          {
+            "name": "Magnesium",
+            "amount": 0.06,
+            "unit": "mg"
+          },
+          {
+            "name": "Zinc",
+            "amount": 0.01,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin B5",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Manganese",
+            "amount": 0.01,
+            "unit": "mg"
+          },
+          {
+            "name": "Mono Unsaturated Fat",
+            "amount": 0,
+            "unit": "g"
+          },
+          {
+            "name": "Fat",
+            "amount": 0,
+            "unit": "g"
+          },
+          {
+            "name": "Alcohol",
+            "amount": 0,
+            "unit": "g"
+          },
+          {
+            "name": "Copper",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Folic Acid",
+            "amount": 0,
+            "unit": "µg"
+          },
+          {
+            "name": "Calcium",
+            "amount": 1.44,
+            "unit": "mg"
+          },
+          {
+            "name": "Folate",
+            "amount": 0,
+            "unit": "µg"
+          },
+          {
+            "name": "Selenium",
+            "amount": 0.01,
+            "unit": "µg"
+          },
+          {
+            "name": "Vitamin D",
+            "amount": 0,
+            "unit": "µg"
+          },
+          {
+            "name": "Vitamin B12",
+            "amount": 0,
+            "unit": "µg"
+          },
+          {
+            "name": "Choline",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Poly Unsaturated Fat",
+            "amount": 0,
+            "unit": "g"
+          },
+          {
+            "name": "Vitamin B2",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Sugar",
+            "amount": 0,
+            "unit": "g"
+          }
+        ]
+      },
+      {
+        "name": "cinnamon",
+        "amount": 1,
+        "unit": "tsp",
+        "nutrients": [
+          {
+            "name": "Potassium",
+            "amount": 11.21,
+            "unit": "mg"
+          },
+          {
+            "name": "Cholesterol",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Fiber",
+            "amount": 1.38,
+            "unit": "g"
+          },
+          {
+            "name": "Trans Fat",
+            "amount": 0,
+            "unit": "g"
+          },
+          {
+            "name": "Vitamin B3",
+            "amount": 0.03,
+            "unit": "mg"
+          },
+          {
+            "name": "Caffeine",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Phosphorus",
+            "amount": 1.66,
+            "unit": "mg"
+          },
+          {
+            "name": "Calories",
+            "amount": 6.42,
+            "unit": "cal"
+          },
+          {
+            "name": "Vitamin B6",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin K",
+            "amount": 0.81,
+            "unit": "µg"
+          },
+          {
+            "name": "Sodium",
+            "amount": 0.26,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin A",
+            "amount": 7.67,
+            "unit": "IU"
+          },
+          {
+            "name": "Vitamin C",
+            "amount": 0.1,
+            "unit": "mg"
+          },
+          {
+            "name": "Carbohydrates",
+            "amount": 2.1,
+            "unit": "g"
+          },
+          {
+            "name": "Vitamin B1",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin E",
+            "amount": 0.06,
+            "unit": "mg"
+          },
+          {
+            "name": "Iron",
+            "amount": 0.22,
+            "unit": "mg"
+          },
+          {
+            "name": "Saturated Fat",
+            "amount": 0.01,
+            "unit": "g"
+          },
+          {
+            "name": "Protein",
+            "amount": 0.1,
+            "unit": "g"
+          },
+          {
+            "name": "Magnesium",
+            "amount": 1.56,
+            "unit": "mg"
+          },
+          {
+            "name": "Zinc",
+            "amount": 0.05,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin B5",
+            "amount": 0.01,
+            "unit": "mg"
+          },
+          {
+            "name": "Manganese",
+            "amount": 0.45,
+            "unit": "mg"
+          },
+          {
+            "name": "Mono Unsaturated Fat",
+            "amount": 0.01,
+            "unit": "g"
+          },
+          {
+            "name": "Fat",
+            "amount": 0.03,
+            "unit": "g"
+          },
+          {
+            "name": "Alcohol",
+            "amount": 0,
+            "unit": "g"
+          },
+          {
+            "name": "Copper",
+            "amount": 0.01,
+            "unit": "mg"
+          },
+          {
+            "name": "Folic Acid",
+            "amount": 0,
+            "unit": "µg"
+          },
+          {
+            "name": "Calcium",
+            "amount": 26.05,
+            "unit": "mg"
+          },
+          {
+            "name": "Folate",
+            "amount": 0.16,
+            "unit": "µg"
+          },
+          {
+            "name": "Selenium",
+            "amount": 0.08,
+            "unit": "µg"
+          },
+          {
+            "name": "Vitamin D",
+            "amount": 0,
+            "unit": "µg"
+          },
+          {
+            "name": "Vitamin B12",
+            "amount": 0,
+            "unit": "µg"
+          },
+          {
+            "name": "Choline",
+            "amount": 0.29,
+            "unit": "mg"
+          },
+          {
+            "name": "Poly Unsaturated Fat",
+            "amount": 0,
+            "unit": "g"
+          },
+          {
+            "name": "Vitamin B2",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Sugar",
+            "amount": 0.06,
+            "unit": "g"
+          }
+        ]
+      },
+      {
+        "name": "vanilla",
+        "amount": 2,
+        "unit": "tsp",
+        "nutrients": [
+          {
+            "name": "Potassium",
+            "amount": 12.43,
+            "unit": "mg"
+          },
+          {
+            "name": "Cholesterol",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Fiber",
+            "amount": 0,
+            "unit": "g"
+          },
+          {
+            "name": "Vitamin B3",
+            "amount": 0.04,
+            "unit": "mg"
+          },
+          {
+            "name": "Caffeine",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Phosphorus",
+            "amount": 0.5,
+            "unit": "mg"
+          },
+          {
+            "name": "Calories",
+            "amount": 24.19,
+            "unit": "cal"
+          },
+          {
+            "name": "Vitamin B6",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin K",
+            "amount": 0,
+            "unit": "µg"
+          },
+          {
+            "name": "Sodium",
+            "amount": 0.76,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin A",
+            "amount": 0,
+            "unit": "IU"
+          },
+          {
+            "name": "Vitamin C",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Carbohydrates",
+            "amount": 1.06,
+            "unit": "g"
+          },
+          {
+            "name": "Vitamin B1",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin E",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Iron",
+            "amount": 0.01,
+            "unit": "mg"
+          },
+          {
+            "name": "Saturated Fat",
+            "amount": 0,
+            "unit": "g"
+          },
+          {
+            "name": "Protein",
+            "amount": 0.01,
+            "unit": "g"
+          },
+          {
+            "name": "Magnesium",
+            "amount": 1.01,
+            "unit": "mg"
+          },
+          {
+            "name": "Zinc",
+            "amount": 0.01,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin B5",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Manganese",
+            "amount": 0.02,
+            "unit": "mg"
+          },
+          {
+            "name": "Mono Unsaturated Fat",
+            "amount": 0,
+            "unit": "g"
+          },
+          {
+            "name": "Fat",
+            "amount": 0.01,
+            "unit": "g"
+          },
+          {
+            "name": "Alcohol",
+            "amount": 2.89,
+            "unit": "g"
+          },
+          {
+            "name": "Copper",
+            "amount": 0.01,
+            "unit": "mg"
+          },
+          {
+            "name": "Folic Acid",
+            "amount": 0,
+            "unit": "µg"
+          },
+          {
+            "name": "Calcium",
+            "amount": 0.92,
+            "unit": "mg"
+          },
+          {
+            "name": "Folate",
+            "amount": 0,
+            "unit": "µg"
+          },
+          {
+            "name": "Selenium",
+            "amount": 0,
+            "unit": "µg"
+          },
+          {
+            "name": "Vitamin D",
+            "amount": 0,
+            "unit": "µg"
+          },
+          {
+            "name": "Vitamin B12",
+            "amount": 0,
+            "unit": "µg"
+          },
+          {
+            "name": "Poly Unsaturated Fat",
+            "amount": 0,
+            "unit": "g"
+          },
+          {
+            "name": "Vitamin B2",
+            "amount": 0.01,
+            "unit": "mg"
+          },
+          {
+            "name": "Sugar",
+            "amount": 1.06,
+            "unit": "g"
+          }
+        ]
+      },
+      {
+        "name": "apples",
+        "amount": 3,
+        "unit": "c",
+        "nutrients": [
+          {
+            "name": "Potassium",
+            "amount": 401.25,
+            "unit": "mg"
+          },
+          {
+            "name": "Cholesterol",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Fiber",
+            "amount": 9,
+            "unit": "g"
+          },
+          {
+            "name": "Fluoride",
+            "amount": 12.38,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin B3",
+            "amount": 0.34,
+            "unit": "mg"
+          },
+          {
+            "name": "Caffeine",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Phosphorus",
+            "amount": 41.25,
+            "unit": "mg"
+          },
+          {
+            "name": "Calories",
+            "amount": 195,
+            "unit": "cal"
+          },
+          {
+            "name": "Vitamin B6",
+            "amount": 0.15,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin K",
+            "amount": 8.25,
+            "unit": "µg"
+          },
+          {
+            "name": "Sodium",
+            "amount": 3.75,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin A",
+            "amount": 202.5,
+            "unit": "IU"
+          },
+          {
+            "name": "Vitamin C",
+            "amount": 17.25,
+            "unit": "mg"
+          },
+          {
+            "name": "Carbohydrates",
+            "amount": 51.79,
+            "unit": "g"
+          },
+          {
+            "name": "Vitamin B1",
+            "amount": 0.06,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin E",
+            "amount": 0.68,
+            "unit": "mg"
+          },
+          {
+            "name": "Iron",
+            "amount": 0.45,
+            "unit": "mg"
+          },
+          {
+            "name": "Saturated Fat",
+            "amount": 0.11,
+            "unit": "g"
+          },
+          {
+            "name": "Protein",
+            "amount": 0.98,
+            "unit": "g"
+          },
+          {
+            "name": "Magnesium",
+            "amount": 18.75,
+            "unit": "mg"
+          },
+          {
+            "name": "Zinc",
+            "amount": 0.15,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin B5",
+            "amount": 0.23,
+            "unit": "mg"
+          },
+          {
+            "name": "Manganese",
+            "amount": 0.13,
+            "unit": "mg"
+          },
+          {
+            "name": "Mono Unsaturated Fat",
+            "amount": 0.03,
+            "unit": "g"
+          },
+          {
+            "name": "Fat",
+            "amount": 0.64,
+            "unit": "g"
+          },
+          {
+            "name": "Alcohol",
+            "amount": 0,
+            "unit": "g"
+          },
+          {
+            "name": "Copper",
+            "amount": 0.1,
+            "unit": "mg"
+          },
+          {
+            "name": "Folic Acid",
+            "amount": 0,
+            "unit": "µg"
+          },
+          {
+            "name": "Calcium",
+            "amount": 22.5,
+            "unit": "mg"
+          },
+          {
+            "name": "Folate",
+            "amount": 11.25,
+            "unit": "µg"
+          },
+          {
+            "name": "Selenium",
+            "amount": 0,
+            "unit": "µg"
+          },
+          {
+            "name": "Vitamin D",
+            "amount": 0,
+            "unit": "µg"
+          },
+          {
+            "name": "Vitamin B12",
+            "amount": 0,
+            "unit": "µg"
+          },
+          {
+            "name": "Choline",
+            "amount": 12.75,
+            "unit": "mg"
+          },
+          {
+            "name": "Poly Unsaturated Fat",
+            "amount": 0.19,
+            "unit": "g"
+          },
+          {
+            "name": "Vitamin B2",
+            "amount": 0.1,
+            "unit": "mg"
+          },
+          {
+            "name": "Sugar",
+            "amount": 38.96,
+            "unit": "g"
+          }
+        ]
+      },
+      {
+        "name": "coconut",
+        "amount": 2,
+        "unit": "c",
+        "nutrients": [
+          {
+            "name": "Potassium",
+            "amount": 569.6,
+            "unit": "mg"
+          },
+          {
+            "name": "Cholesterol",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Fiber",
+            "amount": 14.4,
+            "unit": "g"
+          },
+          {
+            "name": "Vitamin B3",
+            "amount": 0.86,
+            "unit": "mg"
+          },
+          {
+            "name": "Caffeine",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Phosphorus",
+            "amount": 180.8,
+            "unit": "mg"
+          },
+          {
+            "name": "Calories",
+            "amount": 566.4,
+            "unit": "cal"
+          },
+          {
+            "name": "Vitamin B6",
+            "amount": 0.09,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin K",
+            "amount": 0.32,
+            "unit": "µg"
+          },
+          {
+            "name": "Sodium",
+            "amount": 32,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin A",
+            "amount": 0,
+            "unit": "IU"
+          },
+          {
+            "name": "Vitamin C",
+            "amount": 5.28,
+            "unit": "mg"
+          },
+          {
+            "name": "Carbohydrates",
+            "amount": 24.37,
+            "unit": "g"
+          },
+          {
+            "name": "Vitamin B1",
+            "amount": 0.11,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin E",
+            "amount": 0.38,
+            "unit": "mg"
+          },
+          {
+            "name": "Iron",
+            "amount": 3.89,
+            "unit": "mg"
+          },
+          {
+            "name": "Saturated Fat",
+            "amount": 47.52,
+            "unit": "g"
+          },
+          {
+            "name": "Protein",
+            "amount": 5.33,
+            "unit": "g"
+          },
+          {
+            "name": "Magnesium",
+            "amount": 51.2,
+            "unit": "mg"
+          },
+          {
+            "name": "Zinc",
+            "amount": 1.76,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin B5",
+            "amount": 0.48,
+            "unit": "mg"
+          },
+          {
+            "name": "Manganese",
+            "amount": 2.4,
+            "unit": "mg"
+          },
+          {
+            "name": "Mono Unsaturated Fat",
+            "amount": 2.28,
+            "unit": "g"
+          },
+          {
+            "name": "Fat",
+            "amount": 53.58,
+            "unit": "g"
+          },
+          {
+            "name": "Alcohol",
+            "amount": 0,
+            "unit": "g"
+          },
+          {
+            "name": "Copper",
+            "amount": 0.7,
+            "unit": "mg"
+          },
+          {
+            "name": "Folic Acid",
+            "amount": 0,
+            "unit": "µg"
+          },
+          {
+            "name": "Calcium",
+            "amount": 22.4,
+            "unit": "mg"
+          },
+          {
+            "name": "Folate",
+            "amount": 41.6,
+            "unit": "µg"
+          },
+          {
+            "name": "Selenium",
+            "amount": 16.16,
+            "unit": "µg"
+          },
+          {
+            "name": "Vitamin D",
+            "amount": 0,
+            "unit": "µg"
+          },
+          {
+            "name": "Vitamin B12",
+            "amount": 0,
+            "unit": "µg"
+          },
+          {
+            "name": "Choline",
+            "amount": 19.36,
+            "unit": "mg"
+          },
+          {
+            "name": "Poly Unsaturated Fat",
+            "amount": 0.59,
+            "unit": "g"
+          },
+          {
+            "name": "Vitamin B2",
+            "amount": 0.03,
+            "unit": "mg"
+          },
+          {
+            "name": "Sugar",
+            "amount": 9.97,
+            "unit": "g"
+          }
+        ]
+      },
+      {
+        "name": "dates",
+        "amount": 1,
+        "unit": "c",
+        "nutrients": [
+          {
+            "name": "Potassium",
+            "amount": 964.32,
+            "unit": "mg"
+          },
+          {
+            "name": "Cholesterol",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Fiber",
+            "amount": 11.76,
+            "unit": "g"
+          },
+          {
+            "name": "Vitamin B3",
+            "amount": 1.87,
+            "unit": "mg"
+          },
+          {
+            "name": "Caffeine",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Phosphorus",
+            "amount": 91.14,
+            "unit": "mg"
+          },
+          {
+            "name": "Calories",
+            "amount": 414.54,
+            "unit": "cal"
+          },
+          {
+            "name": "Vitamin B6",
+            "amount": 0.24,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin K",
+            "amount": 3.97,
+            "unit": "µg"
+          },
+          {
+            "name": "Sodium",
+            "amount": 2.94,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin A",
+            "amount": 14.7,
+            "unit": "IU"
+          },
+          {
+            "name": "Vitamin C",
+            "amount": 0.59,
+            "unit": "mg"
+          },
+          {
+            "name": "Carbohydrates",
+            "amount": 110.29,
+            "unit": "g"
+          },
+          {
+            "name": "Vitamin B1",
+            "amount": 0.08,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin E",
+            "amount": 0.07,
+            "unit": "mg"
+          },
+          {
+            "name": "Iron",
+            "amount": 1.5,
+            "unit": "mg"
+          },
+          {
+            "name": "Saturated Fat",
+            "amount": 0.05,
+            "unit": "g"
+          },
+          {
+            "name": "Protein",
+            "amount": 3.6,
+            "unit": "g"
+          },
+          {
+            "name": "Magnesium",
+            "amount": 63.21,
+            "unit": "mg"
+          },
+          {
+            "name": "Zinc",
+            "amount": 0.43,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin B5",
+            "amount": 0.87,
+            "unit": "mg"
+          },
+          {
+            "name": "Manganese",
+            "amount": 0.39,
+            "unit": "mg"
+          },
+          {
+            "name": "Mono Unsaturated Fat",
+            "amount": 0.05,
+            "unit": "g"
+          },
+          {
+            "name": "Fat",
+            "amount": 0.57,
+            "unit": "g"
+          },
+          {
+            "name": "Alcohol",
+            "amount": 0,
+            "unit": "g"
+          },
+          {
+            "name": "Copper",
+            "amount": 0.3,
+            "unit": "mg"
+          },
+          {
+            "name": "Folic Acid",
+            "amount": 0,
+            "unit": "µg"
+          },
+          {
+            "name": "Calcium",
+            "amount": 57.33,
+            "unit": "mg"
+          },
+          {
+            "name": "Folate",
+            "amount": 27.93,
+            "unit": "µg"
+          },
+          {
+            "name": "Selenium",
+            "amount": 4.41,
+            "unit": "µg"
+          },
+          {
+            "name": "Vitamin D",
+            "amount": 0,
+            "unit": "µg"
+          },
+          {
+            "name": "Vitamin B12",
+            "amount": 0,
+            "unit": "µg"
+          },
+          {
+            "name": "Choline",
+            "amount": 9.26,
+            "unit": "mg"
+          },
+          {
+            "name": "Poly Unsaturated Fat",
+            "amount": 0.03,
+            "unit": "g"
+          },
+          {
+            "name": "Vitamin B2",
+            "amount": 0.1,
+            "unit": "mg"
+          },
+          {
+            "name": "Sugar",
+            "amount": 93.12,
+            "unit": "g"
+          }
+        ]
+      },
+      {
+        "name": "pecans",
+        "amount": 1,
+        "unit": "c",
+        "nutrients": [
+          {
+            "name": "Potassium",
+            "amount": 405.9,
+            "unit": "mg"
+          },
+          {
+            "name": "Cholesterol",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Fiber",
+            "amount": 9.5,
+            "unit": "g"
+          },
+          {
+            "name": "Fluoride",
+            "amount": 9.9,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin B3",
+            "amount": 1.16,
+            "unit": "mg"
+          },
+          {
+            "name": "Caffeine",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Phosphorus",
+            "amount": 274.23,
+            "unit": "mg"
+          },
+          {
+            "name": "Calories",
+            "amount": 684.09,
+            "unit": "cal"
+          },
+          {
+            "name": "Vitamin B6",
+            "amount": 0.21,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin K",
+            "amount": 3.47,
+            "unit": "µg"
+          },
+          {
+            "name": "Sodium",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin A",
+            "amount": 55.44,
+            "unit": "IU"
+          },
+          {
+            "name": "Vitamin C",
+            "amount": 1.09,
+            "unit": "mg"
+          },
+          {
+            "name": "Carbohydrates",
+            "amount": 13.72,
+            "unit": "g"
+          },
+          {
+            "name": "Vitamin B1",
+            "amount": 0.65,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin E",
+            "amount": 1.39,
+            "unit": "mg"
+          },
+          {
+            "name": "Iron",
+            "amount": 2.5,
+            "unit": "mg"
+          },
+          {
+            "name": "Saturated Fat",
+            "amount": 6.12,
+            "unit": "g"
+          },
+          {
+            "name": "Protein",
+            "amount": 9.08,
+            "unit": "g"
+          },
+          {
+            "name": "Magnesium",
+            "amount": 119.79,
+            "unit": "mg"
+          },
+          {
+            "name": "Zinc",
+            "amount": 4.48,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin B5",
+            "amount": 0.85,
+            "unit": "mg"
+          },
+          {
+            "name": "Manganese",
+            "amount": 4.46,
+            "unit": "mg"
+          },
+          {
+            "name": "Mono Unsaturated Fat",
+            "amount": 40.39,
+            "unit": "g"
+          },
+          {
+            "name": "Fat",
+            "amount": 71.25,
+            "unit": "g"
+          },
+          {
+            "name": "Alcohol",
+            "amount": 0,
+            "unit": "g"
+          },
+          {
+            "name": "Copper",
+            "amount": 1.19,
+            "unit": "mg"
+          },
+          {
+            "name": "Folic Acid",
+            "amount": 0,
+            "unit": "µg"
+          },
+          {
+            "name": "Calcium",
+            "amount": 69.3,
+            "unit": "mg"
+          },
+          {
+            "name": "Folate",
+            "amount": 21.78,
+            "unit": "µg"
+          },
+          {
+            "name": "Selenium",
+            "amount": 3.76,
+            "unit": "µg"
+          },
+          {
+            "name": "Vitamin D",
+            "amount": 0,
+            "unit": "µg"
+          },
+          {
+            "name": "Vitamin B12",
+            "amount": 0,
+            "unit": "µg"
+          },
+          {
+            "name": "Choline",
+            "amount": 40.1,
+            "unit": "mg"
+          },
+          {
+            "name": "Poly Unsaturated Fat",
+            "amount": 21.4,
+            "unit": "g"
+          },
+          {
+            "name": "Vitamin B2",
+            "amount": 0.13,
+            "unit": "mg"
+          },
+          {
+            "name": "Sugar",
+            "amount": 3.93,
+            "unit": "g"
+          }
+        ]
+      },
+      {
+        "name": "brown sugar",
+        "amount": 1,
+        "unit": "c",
+        "nutrients": [
+          {
+            "name": "Potassium",
+            "amount": 292.6,
+            "unit": "mg"
+          },
+          {
+            "name": "Cholesterol",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Fiber",
+            "amount": 0,
+            "unit": "g"
+          },
+          {
+            "name": "Vitamin B3",
+            "amount": 0.24,
+            "unit": "mg"
+          },
+          {
+            "name": "Caffeine",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Phosphorus",
+            "amount": 8.8,
+            "unit": "mg"
+          },
+          {
+            "name": "Calories",
+            "amount": 836,
+            "unit": "cal"
+          },
+          {
+            "name": "Vitamin B6",
+            "amount": 0.09,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin K",
+            "amount": 0,
+            "unit": "µg"
+          },
+          {
+            "name": "Sodium",
+            "amount": 61.6,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin A",
+            "amount": 0,
+            "unit": "IU"
+          },
+          {
+            "name": "Vitamin C",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Carbohydrates",
+            "amount": 215.8,
+            "unit": "g"
+          },
+          {
+            "name": "Vitamin B1",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin E",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Iron",
+            "amount": 1.56,
+            "unit": "mg"
+          },
+          {
+            "name": "Saturated Fat",
+            "amount": 0,
+            "unit": "g"
+          },
+          {
+            "name": "Protein",
+            "amount": 0.26,
+            "unit": "g"
+          },
+          {
+            "name": "Magnesium",
+            "amount": 19.8,
+            "unit": "mg"
+          },
+          {
+            "name": "Zinc",
+            "amount": 0.07,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin B5",
+            "amount": 0.29,
+            "unit": "mg"
+          },
+          {
+            "name": "Manganese",
+            "amount": 0.14,
+            "unit": "mg"
+          },
+          {
+            "name": "Mono Unsaturated Fat",
+            "amount": 0,
+            "unit": "g"
+          },
+          {
+            "name": "Fat",
+            "amount": 0,
+            "unit": "g"
+          },
+          {
+            "name": "Alcohol",
+            "amount": 0,
+            "unit": "g"
+          },
+          {
+            "name": "Copper",
+            "amount": 0.1,
+            "unit": "mg"
+          },
+          {
+            "name": "Folic Acid",
+            "amount": 0,
+            "unit": "µg"
+          },
+          {
+            "name": "Calcium",
+            "amount": 182.6,
+            "unit": "mg"
+          },
+          {
+            "name": "Folate",
+            "amount": 2.2,
+            "unit": "µg"
+          },
+          {
+            "name": "Selenium",
+            "amount": 2.64,
+            "unit": "µg"
+          },
+          {
+            "name": "Vitamin D",
+            "amount": 0,
+            "unit": "µg"
+          },
+          {
+            "name": "Vitamin B12",
+            "amount": 0,
+            "unit": "µg"
+          },
+          {
+            "name": "Choline",
+            "amount": 5.06,
+            "unit": "mg"
+          },
+          {
+            "name": "Poly Unsaturated Fat",
+            "amount": 0,
+            "unit": "g"
+          },
+          {
+            "name": "Vitamin B2",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Sugar",
+            "amount": 213.44,
+            "unit": "g"
+          }
+        ]
+      },
+      {
+        "name": "butter",
+        "amount": 0.5,
+        "unit": "c",
+        "nutrients": [
+          {
+            "name": "Potassium",
+            "amount": 27.24,
+            "unit": "mg"
+          },
+          {
+            "name": "Cholesterol",
+            "amount": 244.03,
+            "unit": "mg"
+          },
+          {
+            "name": "Fiber",
+            "amount": 0,
+            "unit": "g"
+          },
+          {
+            "name": "Trans Fat",
+            "amount": 3.72,
+            "unit": "g"
+          },
+          {
+            "name": "Fluoride",
+            "amount": 3.18,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin B3",
+            "amount": 0.05,
+            "unit": "mg"
+          },
+          {
+            "name": "Caffeine",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Phosphorus",
+            "amount": 27.24,
+            "unit": "mg"
+          },
+          {
+            "name": "Calories",
+            "amount": 813.8,
+            "unit": "cal"
+          },
+          {
+            "name": "Vitamin B6",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin K",
+            "amount": 7.95,
+            "unit": "µg"
+          },
+          {
+            "name": "Sodium",
+            "amount": 810.39,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin A",
+            "amount": 2836.37,
+            "unit": "IU"
+          },
+          {
+            "name": "Vitamin C",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Carbohydrates",
+            "amount": 0.07,
+            "unit": "g"
+          },
+          {
+            "name": "Vitamin B1",
+            "amount": 0.01,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin E",
+            "amount": 2.63,
+            "unit": "mg"
+          },
+          {
+            "name": "Iron",
+            "amount": 0.02,
+            "unit": "mg"
+          },
+          {
+            "name": "Saturated Fat",
+            "amount": 58.3,
+            "unit": "g"
+          },
+          {
+            "name": "Protein",
+            "amount": 0.96,
+            "unit": "g"
+          },
+          {
+            "name": "Magnesium",
+            "amount": 2.27,
+            "unit": "mg"
+          },
+          {
+            "name": "Zinc",
+            "amount": 0.1,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin B5",
+            "amount": 0.12,
+            "unit": "mg"
+          },
+          {
+            "name": "Manganese",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Mono Unsaturated Fat",
+            "amount": 23.86,
+            "unit": "g"
+          },
+          {
+            "name": "Fat",
+            "amount": 92.06,
+            "unit": "g"
+          },
+          {
+            "name": "Alcohol",
+            "amount": 0,
+            "unit": "g"
+          },
+          {
+            "name": "Copper",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Folic Acid",
+            "amount": 0,
+            "unit": "µg"
+          },
+          {
+            "name": "Calcium",
+            "amount": 27.24,
+            "unit": "mg"
+          },
+          {
+            "name": "Folate",
+            "amount": 3.41,
+            "unit": "µg"
+          },
+          {
+            "name": "Selenium",
+            "amount": 1.14,
+            "unit": "µg"
+          },
+          {
+            "name": "Vitamin D",
+            "amount": 1.7,
+            "unit": "µg"
+          },
+          {
+            "name": "Vitamin B12",
+            "amount": 0.19,
+            "unit": "µg"
+          },
+          {
+            "name": "Choline",
+            "amount": 21.34,
+            "unit": "mg"
+          },
+          {
+            "name": "Poly Unsaturated Fat",
+            "amount": 3.45,
+            "unit": "g"
+          },
+          {
+            "name": "Vitamin B2",
+            "amount": 0.04,
+            "unit": "mg"
+          },
+          {
+            "name": "Sugar",
+            "amount": 0.07,
+            "unit": "g"
+          }
+        ]
+      },
+      {
+        "name": "milk",
+        "amount": 0.5,
+        "unit": "c",
+        "nutrients": [
+          {
+            "name": "Potassium",
+            "amount": 161.04,
+            "unit": "mg"
+          },
+          {
+            "name": "Cholesterol",
+            "amount": 12.2,
+            "unit": "mg"
+          },
+          {
+            "name": "Fiber",
+            "amount": 0,
+            "unit": "g"
+          },
+          {
+            "name": "Vitamin B3",
+            "amount": 0.11,
+            "unit": "mg"
+          },
+          {
+            "name": "Caffeine",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Phosphorus",
+            "amount": 102.48,
+            "unit": "mg"
+          },
+          {
+            "name": "Calories",
+            "amount": 74.42,
+            "unit": "cal"
+          },
+          {
+            "name": "Vitamin B6",
+            "amount": 0.04,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin K",
+            "amount": 0.37,
+            "unit": "µg"
+          },
+          {
+            "name": "Sodium",
+            "amount": 52.46,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin A",
+            "amount": 197.64,
+            "unit": "IU"
+          },
+          {
+            "name": "Vitamin C",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Carbohydrates",
+            "amount": 5.86,
+            "unit": "g"
+          },
+          {
+            "name": "Vitamin B1",
+            "amount": 0.06,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin E",
+            "amount": 0.09,
+            "unit": "mg"
+          },
+          {
+            "name": "Iron",
+            "amount": 0.04,
+            "unit": "mg"
+          },
+          {
+            "name": "Saturated Fat",
+            "amount": 2.28,
+            "unit": "g"
+          },
+          {
+            "name": "Protein",
+            "amount": 3.84,
+            "unit": "g"
+          },
+          {
+            "name": "Magnesium",
+            "amount": 12.2,
+            "unit": "mg"
+          },
+          {
+            "name": "Zinc",
+            "amount": 0.45,
+            "unit": "mg"
+          },
+          {
+            "name": "Vitamin B5",
+            "amount": 0.46,
+            "unit": "mg"
+          },
+          {
+            "name": "Manganese",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "name": "Mono Unsaturated Fat",
+            "amount": 0.99,
+            "unit": "g"
+          },
+          {
+            "name": "Fat",
+            "amount": 3.97,
+            "unit": "g"
+          },
+          {
+            "name": "Alcohol",
+            "amount": 0,
+            "unit": "g"
+          },
+          {
+            "name": "Copper",
+            "amount": 0.03,
+            "unit": "mg"
+          },
+          {
+            "name": "Folic Acid",
+            "amount": 0,
+            "unit": "µg"
+          },
+          {
+            "name": "Calcium",
+            "amount": 137.86,
+            "unit": "mg"
+          },
+          {
+            "name": "Folate",
+            "amount": 6.1,
+            "unit": "µg"
+          },
+          {
+            "name": "Selenium",
+            "amount": 4.51,
+            "unit": "µg"
+          },
+          {
+            "name": "Vitamin D",
+            "amount": 1.59,
+            "unit": "µg"
+          },
+          {
+            "name": "Vitamin B12",
+            "amount": 0.55,
+            "unit": "µg"
+          },
+          {
+            "name": "Choline",
+            "amount": 17.45,
+            "unit": "mg"
+          },
+          {
+            "name": "Poly Unsaturated Fat",
+            "amount": 0.24,
+            "unit": "g"
+          },
+          {
+            "name": "Vitamin B2",
+            "amount": 0.21,
+            "unit": "mg"
+          },
+          {
+            "name": "Sugar",
+            "amount": 6.16,
+            "unit": "g"
+          }
+        ]
+      }
+    ],
+    "caloricBreakdown": {
+      "percentProtein": 3.58,
+      "percentFat": 46.28,
+      "percentCarbs": 50.14
+    }
+  },
+  "cuisines": [],
+  "dishTypes": [
+    "dessert"
+  ],
+  "diets": [
+    "lacto ovo vegetarian"
+  ],
+  "occasions": [],
+  "winePairing": {
+    "pairedWines": [
+      "cream sherry",
+      "moscato dasti",
+      "port"
+    ],
+    "pairingText": "Apple Cake works really well with Cream Sherry, Moscato d'Asti, and Port. A common wine pairing rule is to make sure your wine is sweeter than your food. Delicate desserts go well with Moscato d'Asti, nutty desserts with cream sherry, and caramel or chocolate desserts pair well with port. You could try NV Solera Cream Sherry. Reviewers quite like it with a 4.5 out of 5 star rating and a price of about 17 dollars per bottle.",
+    "productMatches": [
+      {
+        "id": 428475,
+        "title": "NV Solera Cream Sherry",
+        "description": "The Solera Cream Sherry has a brilliant amber and deep copper hue. With butterscotch and pecan aromas, the sweet salted nut and brown spice aromas carry a complex caramel accent. A sweet entry leads to a rounded, lush, moderately full-bodied palate with a lengthy, flavorful finish.",
+        "price": "$16.99",
+        "imageUrl": "https://spoonacular.com/productImages/428475-312x231.jpg",
+        "averageRating": 0.9,
+        "ratingCount": 4,
+        "score": 0.823076923076923,
+        "link": "https://www.amazon.com/NV-Solera-Cream-Sherry-750/dp/B00HSME8OW?tag=spoonacular-20"
+      }
+    ]
+  },
+  "instructions": "Mix together sugar and oil; add eggs; beat well. blend in flour, soda and salt. Add cinnamon and vanilla. Stir in apples, coconut, dates and pecans. Batter will be thick. Spoon into a 9\" or 10\" tube pan which has been greased and floured. Bake at 325 degrees for 1 1/2 hours, or until toothpick inserted comes out clean. Remove from oven and immediately pour caramel sauce over and allow to soak in. Cool cake completely before removing from pan. For caramel sauce, heat ingredients together. Boil for 2 minutes.",
+  "analyzedInstructions": [
+    {
+      "name": "",
+      "steps": [
+        {
+          "number": 1,
+          "step": "Mix together sugar and oil; add eggs; beat well. blend in flour, soda and salt.",
+          "ingredients": [
+            {
+              "id": 20081,
+              "name": "all purpose flour",
+              "image": "flour.png"
+            },
+            {
+              "id": 19335,
+              "name": "sugar",
+              "image": "sugar-in-bowl.png"
+            },
+            {
+              "id": 1123,
+              "name": "egg",
+              "image": "egg.png"
+            },
+            {
+              "id": 2047,
+              "name": "salt",
+              "image": "salt.jpg"
+            }
+          ],
+          "equipment": []
+        },
+        {
+          "number": 2,
+          "step": "Add cinnamon and vanilla. Stir in apples, coconut, dates and pecans. Batter will be thick. Spoon into a 9\" or 10\" tube pan which has been greased and floured.",
+          "ingredients": [
+            {
+              "id": 2010,
+              "name": "cinnamon",
+              "image": "cinnamon.jpg"
+            },
+            {
+              "id": 12104,
+              "name": "coconut",
+              "image": "coconut.jpg"
+            },
+            {
+              "id": 2050,
+              "name": "vanilla",
+              "image": "vanilla.jpg"
+            },
+            {
+              "id": 9003,
+              "name": "apple",
+              "image": "apple.jpg"
+            },
+            {
+              "id": 12142,
+              "name": "pecans",
+              "image": "pecans.jpg"
+            },
+            {
+              "id": 9087,
+              "name": "dates",
+              "image": "dates.jpg"
+            }
+          ],
+          "equipment": [
+            {
+              "id": 404645,
+              "name": "frying pan",
+              "image": "pan.png"
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "step": "Bake at 325 degrees for 1 1/2 hours, or until toothpick inserted comes out clean.",
+          "ingredients": [],
+          "equipment": [
+            {
+              "id": 404644,
+              "name": "toothpicks",
+              "image": "toothpicks.jpg"
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "step": "Remove from oven and immediately pour caramel sauce over and allow to soak in. Cool cake completely before removing from pan. For caramel sauce, heat ingredients together. Boil for 2 minutes.",
+          "ingredients": [],
+          "equipment": [
+            {
+              "id": 404784,
+              "name": "oven",
+              "image": "oven.jpg"
+            },
+            {
+              "id": 404645,
+              "name": "frying pan",
+              "image": "pan.png"
+            }
+          ],
+          "length": {
+            "number": 2,
+            "unit": "minutes"
+          }
+        }
+      ]
+    }
+  ],
+  "creditsText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit"
+}

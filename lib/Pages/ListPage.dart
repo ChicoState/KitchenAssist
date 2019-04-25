@@ -1,52 +1,110 @@
-import 'package:flutter/material.dart';
 import 'dart:async';
-import 'package:kitchen_assist/Models/Food.dart';
-import 'package:kitchen_assist/utils/database_helper.dart';
-import 'package:sqflite/sqflite.dart';
+import 'package:flutter/material.dart';
+import 'package:kitchen_assist/authprovider.dart';
+import 'package:kitchen_assist/auth.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:kitchen_assist/Pages/RecipePage.dart';
 
-class listPage extends StatefulWidget{
+class ListPage extends StatefulWidget {
+  const ListPage({this.onSignedOut});
+  final VoidCallback onSignedOut;
 
   @override
-  createState() => new listPageState();
+  createState() => new ListPageState();
 }
+  class ListPageState extends State<ListPage>{
+    int currentTab = 0;
+    ListPage page1;
+    recipePage page2;
+    List<Widget> pages;
+    Widget currentPage;
 
-class listPageState extends State<listPage> {
-  List<String> _foodItems = [];
+    BaseAuth auth;
+    Future<void> _signOut(BuildContext context) async {
 
-  DatabaseHelper databaseHelper = DatabaseHelper();
-  List<Food> foodList;
-  int count = 0;
-
-
-  @override
-  Widget build(BuildContext context) {
-    if(foodList == null){
-      foodList = List<Food>();
+      try {
+        final BaseAuth auth = AuthProvider.of(context).auth;
+        await auth.signOut();
+        widget.onSignedOut();
+      } catch (e) {
+        print(e);
+      }
     }
+
+
+  List<String> _foodItems = [];
+  TextEditingController _controller = new TextEditingController();
+  @override
+
+  void initState(){
+    page1 = ListPage();
+    page2 = recipePage(post: fetchPost());
+    pages = [page1, page2];
+    currentPage = page1;
+    super.initState();
+  }
+
+
+  Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
+      body: Column( //maybe make new class
           children: <Widget>[
             enterFoodItem(),
             buildFoodList(),
           ]
       ),
-      backgroundColor: Theme.of(context).backgroundColor,
-      floatingActionButton: new FloatingActionButton(
-          onPressed: (){/*_firestoreTest();*/},
-          tooltip: 'Add Item',
-          backgroundColor: Colors.black,
-          child: new Icon(Icons.add)
-      ),
     );
   }
 
-  TextEditingController _controller = new TextEditingController();
+
+
+
+  Widget enterFoodItem() {
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      children: <Widget>[
+        Flexible(
+          child: TextField(
+            controller: _controller,
+            autofocus: false,
+            textCapitalization: TextCapitalization.sentences,
+            decoration: new InputDecoration(
+                fillColor: Theme
+                    .of(context)
+                    .dialogBackgroundColor,
+                hintStyle: TextStyle(color: Theme
+                    .of(context)
+                    .hintColor),
+                hintText: 'Enter a food item...',
+                contentPadding: const EdgeInsets.all(16.0)),
+          ),
+        ),
+        RaisedButton(
+          onPressed: () {
+            Firestore.instance
+                    .collection('Test')
+                    .document('5cK2LdvVfgmgM7EGQb6m')//user id
+                    .updateData({
+                  'data': _controller.value.text,
+                });
+            _addFoodItem(_controller.value.text);
+            _controller.clear();
+          },
+          child: Text('Submit'),
+          color: Theme
+              .of(context)
+              .buttonColor,
+        ),
+      ],
+    );
+  }
 
   void _addFoodItem(String item) {
     if (item.length > 0) {
       setState(() => _foodItems.add(item));
     }
   }
+
 
   Widget buildFoodList() {
     return Flexible(
@@ -94,43 +152,55 @@ class listPageState extends State<listPage> {
           backgroundColor: Colors.lightBlue[100]);
     }));
   }
-
-  Widget enterFoodItem() {
-    return Row(
-      mainAxisSize: MainAxisSize.min,
-      children: <Widget>[
-        Flexible(
-          child: TextField(
-            controller: _controller,
-            autofocus: false,
-            textCapitalization: TextCapitalization.sentences,
-            decoration: new InputDecoration(
-                fillColor: Theme
-                    .of(context)
-                    .dialogBackgroundColor,
-                hintStyle: TextStyle(color: Theme
-                    .of(context)
-                    .hintColor),
-                hintText: 'Enter a food item...',
-                contentPadding: const EdgeInsets.all(16.0)),
-          ),
-        ),
-        RaisedButton(
-          onPressed: () {
-            _addFoodItem(_controller.value.text);
-            _controller.clear();
-          },
-          child: Text('Submit'),
-          color: Theme
-              .of(context)
-              .buttonColor,
-        ),
-      ],
-    );
+//  void _firestoreTest() {
+//    TextEditingController _controller = new TextEditingController();
+//    Navigator.of(context).push(new MaterialPageRoute(builder: (context) {
+//      return Scaffold(
+//        appBar: AppBar(
+//          title: Text('Firestore'),
+//          backgroundColor: Theme
+//              .of(context)
+//              .bottomAppBarColor,
+//        ),
+//        body: Column(
+//          children: <Widget>[
+//            TextField(
+//              controller: _controller,
+//              autofocus: true,
+//              textCapitalization: TextCapitalization.sentences,
+//            ),
+//            RaisedButton(
+//              padding: EdgeInsets.all(1.0),
+//              child: Text('Submit'),
+//              color: Theme
+//                  .of(context)
+//                  .buttonColor,
+//              onPressed: () {
+//                Firestore.instance
+//                    .collection('Test')
+//                    .document('5cK2LdvVfgmgM7EGQb6m')
+//                    .updateData({
+//                  'data': _controller.value.text,
+//                });
+//                _controller.clear();
+//              },
+//            ),
+//            StreamBuilder(
+//              stream: Firestore.instance.collection('Test').snapshots(),
+//              builder: (context, snapshot) {
+//                if (!snapshot.hasData) return const Text('Waiting...');
+//                return Text(snapshot.data.documents[0]['data']);
+//              },
+//            ),
+//          ],
+//        ),
+//        floatingActionButton: FloatingActionButton(
+//          onPressed: () {
+//            Navigator.pop(context);
+//          },
+//          child: Icon(Icons.clear),
+//        ),
+//      );
+//    }));
+//  }
   }
-  void _insert(Food food) async{
-    //int result = await databaseHelper.insertItem(food);
-  }
-}
-
-//need to test database

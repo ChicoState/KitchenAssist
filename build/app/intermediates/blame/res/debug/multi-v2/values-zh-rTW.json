@@ -4,24 +4,7 @@
             "outputFile": "C:\\Users\\Lukep\\Desktop\\KA\\KitchenAssist\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh-rTW\\values-zh-rTW.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Lukep\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\8ed5a00af4acee6770203db1eea42ec7\\res\\values-zh-rTW\\values-zh-rTW.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "2413",
-                        "endColumns": "100",
-                        "endOffsets": "2509"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Lukep\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-16.0.1.aar\\c6ad0f98e683292b5de7270339ac68ec\\res\\values-zh-rTW\\values.xml",
+                    "source": "C:\\Users\\Lukep\\.gradle\\caches\\transforms-1\\files-1.1\\jetified-play-services-base-16.0.1.aar\\61bcb77b0341c5000335f88f1218353d\\res\\values-zh-rTW\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -38,7 +21,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Lukep\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-16.0.1.aar\\629e8361d30f6d067cb50a83a559984c\\res\\values-zh-rTW\\values.xml",
+                    "source": "C:\\Users\\Lukep\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.0-rc01.aar\\df666190e116ba945cc7dafd2eed1d7b\\res\\values-zh-rTW\\values-zh-rTW.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "20",
+                        "startColumns": "4",
+                        "startOffsets": "2413",
+                        "endColumns": "100",
+                        "endOffsets": "2509"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Lukep\\.gradle\\caches\\transforms-1\\files-1.1\\jetified-play-services-basement-16.1.0.aar\\d833a4ac59c09cd523c97e82cf90fbbd\\res\\values-zh-rTW\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
