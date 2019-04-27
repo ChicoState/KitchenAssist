@@ -47,15 +47,20 @@ class HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(
+        centerTitle: true,
         actions: <Widget>[
           FlatButton(
-            child: Text('Logout', style: TextStyle(fontSize: 17.0, color: Colors.white)),
+            child: Text('Logout',
+                style: TextStyle(fontSize: 17.0, color: Colors.white)
+            ),
             onPressed: () => _signOut(context),
           )
         ],
+          backgroundColor: new Color(0xFF64FFDA),
         iconTheme: Theme.of(context).accentIconTheme,
-        title: new Text('In-House Food'),
-        backgroundColor: Theme.of(context).backgroundColor,
+        title: new Text('Food & Recipes',
+            style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold)
+        ),
       ),
       body: currentPage,
       bottomNavigationBar: BottomNavigationBar(

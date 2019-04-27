@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "519996473565",
-    "firebase_url": "https://kitchenassist.firebaseio.com",
-    "project_id": "kitchenassist",
-    "storage_bucket": "kitchenassist.appspot.com"
+    "project_number": "767804642530",
+    "firebase_url": "https://lastone-80cd1.firebaseio.com",
+    "project_id": "lastone-80cd1",
+    "storage_bucket": "lastone-80cd1.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:519996473565:android:45fcd2d7824b249e",
+        "mobilesdk_app_id": "1:767804642530:android:45fcd2d7824b249e",
         "android_client_info": {
           "package_name": "com.example.kitchenassist"
         }
       },
       "oauth_client": [
         {
-          "client_id": "519996473565-lobtc813cnhb3s5jflb3bqv8m8g833t4.apps.googleusercontent.com",
+          "client_id": "767804642530-j59o7pphakqg8pbec7aoqblvetis8q18.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBDi4pOcbZeTcZJaO7BRbBWr-NCindRTcg"
+          "current_key": "AIzaSyDdnf24tGzZ6sJ1MqCgOnqcDZTf2RrnpFI"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "519996473565-lobtc813cnhb3s5jflb3bqv8m8g833t4.apps.googleusercontent.com",
+              "client_id": "767804642530-j59o7pphakqg8pbec7aoqblvetis8q18.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

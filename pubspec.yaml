@@ -41,11 +41,12 @@ flutter:
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
-  uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
   # assets:
   assets:
+    - images/food.jpg
+    - images/food2.jpg
     - assets/seacrhByIngredient.json
     - assets/639487.json
     - assets/641803.json
@@ -67,12 +68,11 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-#   fonts:
-#     - family: B612
-#       fonts:
-#         - asset: fonts/B612-Bold.ttf
-#           weight: 700
-#         - asset: fonts/B612-Regular.ttf
+  fonts:
+    - family: Charmonman
+      fonts:
+        - asset: assets/Charmonman-Regular.ttf
+  uses-material-design: true
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.io/custom-fonts/#from-packages

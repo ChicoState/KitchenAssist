@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:kitchen_assist/authprovider.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:kitchen_assist/auth.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
+String id;
+final db = Firestore.instance;
+final _formKey = GlobalKey<FormState>();
+String name;
+String FoodName;
+var b;
 class EmailFieldValidator {
   static String validate(String value) {
     return value.isEmpty ? 'Email can\'t be empty' : null;
@@ -76,10 +81,17 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Kitchen Assist'),
+        centerTitle: true,
+        title: Text('Kitchen Assist', style: TextStyle(color: Colors.black),),
+        backgroundColor: new Color(0xFF64FFDA),
       ),
       body: Container(
         padding: EdgeInsets.all(16.0),
+        decoration: new BoxDecoration(
+          image: new DecorationImage(
+              image: new AssetImage('images/food2.jpg'), fit: BoxFit.cover
+          ),
+        ),
         child: Form(
           key: formKey,
           child: Column(
@@ -95,13 +107,22 @@ class _LoginPageState extends State<LoginPage> {
     return <Widget>[
       TextFormField(
         key: Key('email'),
-        decoration: InputDecoration(labelText: 'Email'),
+        decoration: InputDecoration(
+          labelText: 'Email',
+          labelStyle: new TextStyle(color: Colors.white, fontSize: 16.0, fontWeight: FontWeight.bold),
+        ),
+        style: new TextStyle(color: Colors.white),
         validator: EmailFieldValidator.validate,
         onSaved: (String value) => _email = value,
+
       ),
       TextFormField(
         key: Key('password'),
-        decoration: InputDecoration(labelText: 'Password'),
+        decoration: InputDecoration(
+          labelText: 'Password',
+          labelStyle: new TextStyle(color: Colors.white, fontSize: 16.0, fontWeight: FontWeight.bold),
+        ),
+        style: new TextStyle(color: Colors.white),
         obscureText: true,
         validator: PasswordFieldValidator.validate,
         onSaved: (String value) => _password = value,
@@ -117,7 +138,7 @@ class _LoginPageState extends State<LoginPage> {
           child: Text('Login', style: TextStyle(fontSize: 20.0)),
           onPressed: validateAndSubmit,
         ),
-        FlatButton(
+        RaisedButton(
           child: Text('Create an account', style: TextStyle(fontSize: 20.0)),
           onPressed: moveToRegister,
         ),
@@ -128,7 +149,7 @@ class _LoginPageState extends State<LoginPage> {
           child: Text('Create an account', style: TextStyle(fontSize: 20.0)),
           onPressed: validateAndSubmit,
         ),
-        FlatButton(
+        RaisedButton(
           child: Text('Have an account? Login', style: TextStyle(fontSize: 20.0)),
           onPressed: moveToLogin,
         ),

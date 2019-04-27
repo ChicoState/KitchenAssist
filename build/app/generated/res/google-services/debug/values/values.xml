@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="default_web_client_id" translatable="false">519996473565-lobtc813cnhb3s5jflb3bqv8m8g833t4.apps.googleusercontent.com</string>
-    <string name="firebase_database_url" translatable="false">https://kitchenassist.firebaseio.com</string>
-    <string name="gcm_defaultSenderId" translatable="false">519996473565</string>
-    <string name="google_api_key" translatable="false">AIzaSyBDi4pOcbZeTcZJaO7BRbBWr-NCindRTcg</string>
-    <string name="google_app_id" translatable="false">1:519996473565:android:45fcd2d7824b249e</string>
-    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBDi4pOcbZeTcZJaO7BRbBWr-NCindRTcg</string>
-    <string name="google_storage_bucket" translatable="false">kitchenassist.appspot.com</string>
-    <string name="project_id" translatable="false">kitchenassist</string>
+    <string name="default_web_client_id" translatable="false">767804642530-j59o7pphakqg8pbec7aoqblvetis8q18.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://lastone-80cd1.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">767804642530</string>
+    <string name="google_api_key" translatable="false">AIzaSyDdnf24tGzZ6sJ1MqCgOnqcDZTf2RrnpFI</string>
+    <string name="google_app_id" translatable="false">1:767804642530:android:45fcd2d7824b249e</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDdnf24tGzZ6sJ1MqCgOnqcDZTf2RrnpFI</string>
+    <string name="google_storage_bucket" translatable="false">lastone-80cd1.appspot.com</string>
+    <string name="project_id" translatable="false">lastone-80cd1</string>
 </resources>
