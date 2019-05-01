@@ -4,6 +4,7 @@ import 'package:kitchen_assist/authprovider.dart';
 import 'package:kitchen_assist/auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:kitchen_assist/Pages/RecipePage.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 class ListPage extends StatefulWidget {
   const ListPage({this.onSignedOut});
@@ -19,6 +20,7 @@ class ListPage extends StatefulWidget {
     List<Widget> pages;
     Widget currentPage;
     String id;
+    List<String> foods = new List();
     final db = Firestore.instance;
     final _formKey = GlobalKey<FormState>();
     String name;
@@ -46,7 +48,7 @@ class ListPage extends StatefulWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Text(
-                '${doc.data['FoodName']}',
+                '${doc.data["Food"]}',
                 style: TextStyle(fontSize: 24),
               ),
               SizedBox(height: 4),
@@ -69,6 +71,7 @@ class ListPage extends StatefulWidget {
   @override
     TextFormField buildTextFormField() {
       return TextFormField(
+        controller: _controller,
         decoration: InputDecoration(
           border: InputBorder.none,
           hintText: 'Enter item',
@@ -83,7 +86,6 @@ class ListPage extends StatefulWidget {
         onSaved: (value) => name = value,
       );
     }
-
     @override
     Widget build(BuildContext context) {
       return Scaffold(
@@ -98,14 +100,19 @@ class ListPage extends StatefulWidget {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
                 RaisedButton(
-                  onPressed: createData,
+                  onPressed: () {
+                    createData();
+                    foods.add(_controller.value.text);
+                    _controller.clear();
+                  },
                   child: Text('Save', style: TextStyle(color: Colors.white)),
                   color: Colors.green,
+
                 ),
               ],
             ),
             StreamBuilder<QuerySnapshot>(
-              stream: db.collection('Food').snapshots(),
+              stream: db.collection('users').snapshots(),
               builder: (context, snapshot) {
                 if (snapshot.hasData) {
                   return Column(children: snapshot.data.documents.map((doc) => buildItem(doc)).toList());
@@ -119,60 +126,64 @@ class ListPage extends StatefulWidget {
       );
     }
 
+
     void createData() async {
       if (_formKey.currentState.validate()) {
         _formKey.currentState.save();
-        DocumentReference ref = await db.collection('Food').add({'FoodName': '$name'});
-        setState(() => id = ref.documentID);
-        print(ref.documentID);
-      }
+        FirebaseUser user = await FirebaseAuth.instance.currentUser();
+        db.collection('users').document(user.uid).updateData({
+          "items": FieldValue.arrayUnion(foods)});
+        }
     }
 
     void readData() async {
-      DocumentSnapshot snapshot = await db.collection('Food').document(id).get();
+      DocumentSnapshot snapshot = await db.collection('users').document(id).get();
       print(snapshot.data['FoodName']);
     }
 
     void deleteData(DocumentSnapshot doc) async {
-      await db.collection('Food').document(doc.documentID).delete();
+      await db.collection('users').document(doc.documentID).delete();
       setState(() => id = null);
     }
 
 
 
-  Widget enterFoodItem() {
-    return Row(
-      mainAxisSize: MainAxisSize.min,
-      children: <Widget>[
-        Flexible(
-          child: TextField(
-            controller: _controller,
-            autofocus: false,
-            textCapitalization: TextCapitalization.sentences,
-            decoration: new InputDecoration(
-              fillColor: Colors.white,
-                border: new OutlineInputBorder(
-                  borderRadius: new BorderRadius.circular(15.0),
-                  borderSide: new BorderSide(),
-                ),
-                hintText: 'Enter ingredient...',
-                contentPadding: const EdgeInsets.all(15.0)),
-          ),
-        ),
-        Container(
-          margin: const EdgeInsets.only(left: 15.0),
-          child: RaisedButton(
-            onPressed: () {
-              _addFoodItem(_controller.value.text);
-              _controller.clear();
-            },
-            child: Text('Save'),
-            color: Colors.tealAccent,
-           ),
-        )
-      ],
-    );
-  }
+//  Widget enterFoodItem() {
+//    return Row(
+//      mainAxisSize: MainAxisSize.min,
+//      children: <Widget>[
+//        Flexible(
+//          child: TextField(
+//            controller: _controller,
+//            autofocus: false,
+//            textCapitalization: TextCapitalization.sentences,
+//            decoration: new InputDecoration(
+//              fillColor: Colors.white,
+//                border: new OutlineInputBorder(
+//                  borderRadius: new BorderRadius.circular(15.0),
+//                  borderSide: new BorderSide(),
+//                ),
+//                hintText: 'Enter ingredient...',
+//                contentPadding: const EdgeInsets.all(15.0)),
+//          ),
+//        ),
+//        Container(
+//          margin: const EdgeInsets.only(left: 15.0),
+//          child: RaisedButton(
+//            onPressed: () {
+//              _addFoodItem(_controller.value.text);
+//              _controller.clear();
+//              //Firestore.instance.collection('users').document(user.uid).setData({
+//
+//            //  });
+//            },
+//            child: Text('uahdalkj'),
+//            color: Colors.tealAccent,
+//           ),
+//        )
+//      ],
+//    );
+//  }
 
   void _addFoodItem(String item) {
     if (item.length > 0) {
