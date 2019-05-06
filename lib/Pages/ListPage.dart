@@ -37,39 +37,7 @@ class ListPageState extends State<ListPage>{
     }
   }
 
-  List<String> _foodItems = [];
   TextEditingController _controller = new TextEditingController();
-
-//
-//  Card buildItem(DocumentSnapshot doc) {
-//    return Card(
-//      child: Padding(
-//        padding: const EdgeInsets.all(8.0),
-//        child: Column(
-//          crossAxisAlignment: CrossAxisAlignment.start,
-//          children: <Widget>[
-//            Text(
-//              foods.
-//              style: TextStyle(fontSize: 24),
-//            ),
-//            SizedBox(height: 20),
-//            Row(
-//              mainAxisAlignment: MainAxisAlignment.end,
-//              children: <Widget>[
-//                SizedBox(width: 20),
-//                FlatButton(
-//                  onPressed: () => deleteData(doc),
-//                  child: Text('Delete'),
-//                ),
-//              ],
-//            )
-//          ],
-//        ),
-//      ),
-//    );
-//  }
-
-
 
   @override
   Widget buildTextFormField() {
@@ -92,21 +60,21 @@ class ListPageState extends State<ListPage>{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: ListView(
-        padding: EdgeInsets.all(8),
+      body: Column(
         children: <Widget>[
-          Form(
-            key: _formKey,
-            child: buildTextFormField(),
-          ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
+              Expanded(
+                child: Form(
+                  key: _formKey,
+                  child: buildTextFormField(),
+                ),
+              ),
               RaisedButton(
                 onPressed: () {
                   createData();
                   _addFoodItem(_controller.value.text);
-                  foods.add(_controller.value.text);
                   _controller.clear();
                 },
                 child: Text('Save', style: TextStyle(color: Colors.white)),
@@ -114,23 +82,14 @@ class ListPageState extends State<ListPage>{
               ),
             ],
           ),
-//          StreamBuilder<QuerySnapshot>(
-//            stream: db.collection('users').snapshots(),
-//            builder: (context, snapshot) {
-//              if (snapshot.hasData) {
-//                //return Column(children: snapshot.data.documents.map((doc) => buildItem(doc)).toList());
-//              } else {
-//                return SizedBox();
-//              }
-//            },
-//          )
-          Column(
-            //mainAxisSize: MainAxisSize.min,
+        Expanded(
+        child: ListView(
+            shrinkWrap: true,
             children: <Widget>[
-              Text("hello"),
-             // buildFoodList(),
+               buildFoodList(),
             ],
-          ),
+            ),
+        ),
         ],
       ),
     );
@@ -141,11 +100,8 @@ class ListPageState extends State<ListPage>{
     if (_formKey.currentState.validate()) {
       _formKey.currentState.save();
       FirebaseUser user = await FirebaseAuth.instance.currentUser();
-//      db.collection('ref').document(user.uid).setData(
-//          {'ref': 'name'}
-//      );
       db.collection('users').document(user.uid).updateData({
-        "items": FieldValue.arrayUnion(foods)});//something here
+        "items": FieldValue.arrayUnion(foods)});
     }
   }
 
@@ -156,42 +112,12 @@ class ListPageState extends State<ListPage>{
   }
 
   void deleteData(DocumentSnapshot doc) async {
-    await db.collection('users').document(doc.documentID).delete();
+    FirebaseUser user = await FirebaseAuth.instance.currentUser();
+    //await db.collection('users').document(user.uid).updateData(
+        //FieldValueType.arrayUnion)
     setState(() => id = null);
   }
 
-//  Widget enterFoodItem() {
-//    return Row(
-//      mainAxisSize: MainAxisSize.min,
-//      children: <Widget>[
-//        Flexible(
-//          child: TextField(
-//            controller: _controller,
-//            autofocus: false,
-//            textCapitalization: TextCapitalization.sentences,
-//            decoration: new InputDecoration(
-//                fillColor: Theme
-//                    .of(context)
-//                    .dialogBackgroundColor,
-//                hintStyle: TextStyle(color: Theme
-//                    .of(context)
-//                    .hintColor),
-//                hintText: 'Enter a food item...',
-//                contentPadding: const EdgeInsets.all(16.0)),
-//          ),
-//        ),
-//        RaisedButton(
-//          onPressed: () {
-//            createData();
-//            foods.add(_controller.value.text);
-//            _controller.clear();
-//          },
-//          child: Text('Sa', style: TextStyle(color: Colors.white)),
-//          color: Colors.green,
-//        ),
-//      ],
-//    );
-//  }
 
   void _addFoodItem(String item){
     if(item.length > 0){
@@ -203,8 +129,10 @@ class ListPageState extends State<ListPage>{
 
 
   Widget buildFoodList(){
-    return Flexible(
+    return Container(
       child:ListView.builder(
+        scrollDirection: Axis.vertical,
+        shrinkWrap: true,
         itemBuilder: (context, index){
           if(index < foods.length) {
             return buildFoodItem(foods[index]);
@@ -215,8 +143,7 @@ class ListPageState extends State<ListPage>{
   }
 
   Widget buildFoodItem(String item) {
-    print(item);
-    return ListTile(
+    return new ListTile(
       title: new Text(item),
       trailing: FlatButton(
         onPressed: () {

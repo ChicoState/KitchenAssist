@@ -57,6 +57,11 @@ class _LoginPageState extends State<LoginPage> {
         } else {
           FirebaseUser user = await FirebaseAuth.instance.createUserWithEmailAndPassword(email: _email, password: _password);
           print('Registered user: ${user.uid}');
+
+          Firestore.instance.collection('users').document(user.uid).setData(
+           {}
+          );
+
         }
         widget.onSignedIn();
     }
