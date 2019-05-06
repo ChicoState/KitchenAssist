@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\Lukep\\Desktop\\KA\\KitchenAssist\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Lukep\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.0-rc01.aar\\df666190e116ba945cc7dafd2eed1d7b\\res\\values-v21\\values-v21.xml",
+                    "source": "C:\\Users\\Lukep\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.0-rc01.aar\\ab4347278007c2c14af486ea0aac2df2\\res\\values-v21\\values-v21.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,13",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Lukep\\.gradle\\caches\\transforms-1\\files-1.1\\media-1.0.0-rc01.aar\\45d16f82c42f7da7ff557385d3d62731\\res\\values-v21\\values-v21.xml",
+                    "source": "C:\\Users\\Lukep\\.gradle\\caches\\transforms-1\\files-1.1\\media-1.0.0-rc01.aar\\75d99bc13527fb5e324b9034d7b8a26b\\res\\values-v21\\values-v21.xml",
                     "from": {
                         "startLines": "2,5,8,11",
                         "startColumns": "4,4,4,4",

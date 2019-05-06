@@ -1,9 +1,9 @@
 #Internal package file, do not edit.
-#Thu Apr 25 10:20:48 PDT 2019
+#Sat May 04 07:48:18 PDT 2019
 5.base=C\:\\Users\\Lukep\\Desktop\\KA\\KitchenAssist\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\12
 22.path=flutter_assets/LICENSE
 32.set=DEX
-32.path=classes.dex
+32.path=classes2.dex
 18.baseType=DIRECTORY
 27.baseType=DIRECTORY
 9.base=C\:\\Users\\Lukep\\Desktop\\KA\\KitchenAssist\\build\\app\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
@@ -13,7 +13,7 @@
 10.set=ASSET
 28.set=DEX
 22.base=C\:\\Users\\Lukep\\Desktop\\KA\\KitchenAssist\\build\\app\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
-32.base=C\:\\Users\\Lukep\\Desktop\\KA\\KitchenAssist\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\5
+32.base=C\:\\Users\\Lukep\\Desktop\\KA\\KitchenAssist\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\1
 12.path=classes.dex
 17.set=ASSET
 26.base=C\:\\Users\\Lukep\\Desktop\\KA\\KitchenAssist\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\11
@@ -109,7 +109,7 @@ count=36
 21.path=flutter_assets/images/food2.jpg
 22.set=ASSET
 34.baseType=DIRECTORY
-31.path=classes2.dex
+31.path=classes.dex
 8.base=C\:\\Users\\Lukep\\Desktop\\KA\\KitchenAssist\\build\\app\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
 11.set=ASSET
 29.set=DEX
@@ -120,7 +120,7 @@ count=36
 19.path=flutter_assets/isolate_snapshot_data
 21.base=C\:\\Users\\Lukep\\Desktop\\KA\\KitchenAssist\\build\\app\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
 29.path=classes.dex
-31.base=C\:\\Users\\Lukep\\Desktop\\KA\\KitchenAssist\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\1
+31.base=C\:\\Users\\Lukep\\Desktop\\KA\\KitchenAssist\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\5
 11.path=flutter_assets/assets/643426.json
 2.set=ASSET
 25.base=C\:\\Users\\Lukep\\Desktop\\KA\\KitchenAssist\\build\\app\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
