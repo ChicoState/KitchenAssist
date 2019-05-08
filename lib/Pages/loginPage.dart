@@ -94,7 +94,7 @@ class _LoginPageState extends State<LoginPage> {
         padding: EdgeInsets.all(16.0),
         decoration: new BoxDecoration(
           image: new DecorationImage(
-              image: new AssetImage('images/food2.jpg'), fit: BoxFit.cover
+              image: new AssetImage('assets/food.jpg'), fit: BoxFit.cover
           ),
         ),
         child: Form(
