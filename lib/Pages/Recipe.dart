@@ -7,10 +7,10 @@ String recipeToJson(Recipe data) => json.encode(data.toJson());
 class Recipe {
   List<Result> results;
   String baseUri;
-  int offset;
-  int number;
-  int totalResults;
-  int processingTimeMs;
+  var offset;
+  var number;
+  var totalResults;
+  var processingTimeMs;
 
   Recipe({
     this.results,
@@ -49,25 +49,25 @@ class Result {
   bool cheap;
   bool veryPopular;
   bool sustainable;
-  int weightWatcherSmartPoints;
+  var weightWatcherSmartPovars;
   Gaps gaps;
   bool lowFodmap;
   bool ketogenic;
   bool whole30;
-  int preparationMinutes;
-  int cookingMinutes;
+  var preparationMinutes;
+  var cookingMinutes;
   String sourceUrl;
   String spoonacularSourceUrl;
-  int aggregateLikes;
-  int spoonacularScore;
-  int healthScore;
+  var aggregateLikes;
+  var spoonacularScore;
+  var healthScore;
   String creditText;
   String sourceName;
   double pricePerServing;
-  int id;
+  var id;
   String title;
-  int readyInMinutes;
-  int servings;
+  var readyInMinutes;
+  var servings;
   String image;
   ImageType imageType;
   List<String> cuisines;
@@ -77,9 +77,9 @@ class Result {
   WinePairing winePairing;
   List<AnalyzedInstruction> analyzedInstructions;
   String creditsText;
-  int usedIngredientCount;
-  int missedIngredientCount;
-  int likes;
+  var usedIngredientCount;
+  var missedIngredientCount;
+  var likes;
   List<SedIngredient> missedIngredients;
   List<SedIngredient> usedIngredients;
   List<SedIngredient> unusedIngredients;
@@ -93,7 +93,7 @@ class Result {
     this.cheap,
     this.veryPopular,
     this.sustainable,
-    this.weightWatcherSmartPoints,
+    this.weightWatcherSmartPovars,
     this.gaps,
     this.lowFodmap,
     this.ketogenic,
@@ -138,7 +138,7 @@ class Result {
     cheap: json["cheap"],
     veryPopular: json["veryPopular"],
     sustainable: json["sustainable"],
-    weightWatcherSmartPoints: json["weightWatcherSmartPoints"],
+    weightWatcherSmartPovars: json["weightWatcherSmartPovars"],
     gaps: gapsValues.map[json["gaps"]],
     lowFodmap: json["lowFodmap"],
     ketogenic: json["ketogenic"],
@@ -183,7 +183,7 @@ class Result {
     "cheap": cheap,
     "veryPopular": veryPopular,
     "sustainable": sustainable,
-    "weightWatcherSmartPoints": weightWatcherSmartPoints,
+    "weightWatcherSmartPovars": weightWatcherSmartPovars,
     "gaps": gapsValues.reverse[gaps],
     "lowFodmap": lowFodmap,
     "ketogenic": ketogenic,
@@ -241,7 +241,7 @@ class AnalyzedInstruction {
 }
 
 class Step {
-  int number;
+  var number;
   String step;
   List<Ent> ingredients;
   List<Ent> equipment;
@@ -273,7 +273,7 @@ class Step {
 }
 
 class Ent {
-  int id;
+  var id;
   String name;
   String image;
 
@@ -297,7 +297,7 @@ class Ent {
 }
 
 class Length {
-  int number;
+  var number;
   Unit unit;
 
   Length({
@@ -336,7 +336,7 @@ final imageTypeValues = new EnumValues({
 });
 
 class SedIngredient {
-  int id;
+  var id;
   double amount;
   String unit;
   String unitLong;
@@ -424,13 +424,13 @@ class WinePairing {
 }
 
 class ProductMatch {
-  int id;
+  var id;
   String title;
   String description;
   String price;
   String imageUrl;
   double averageRating;
-  int ratingCount;
+  var ratingCount;
   double score;
   String link;
 

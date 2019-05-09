@@ -7,14 +7,24 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart' show rootBundle;
 
 // Uncomment this to connect the api
-/*Future<Recipe> fetchPost() async {
+/*Future<Recipe> fetchPost(List<String> ingredients) async {
+
+  String request = "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/searchComplex?includeIngredients=";
+  if (ingredients.length > 0) {
+    request += ingredients[0];
+  }
+  for (int i = 1; i < ingredients.length; i++) {
+    request += "%2C+" + ingredients[i];
+  }
+  request += "&ranking=1&fillIngredients=true&instructionsRequired=true&addRecipeInformation=true&limitLicense=false&offset=0&number=5";
+
   final response =
-  await http.get("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/searchComplex?includeIngredients=beef%2C+onions%2C+lettuce&ranking=1&fillIngredients=true&instructionsRequired=true&addRecipeInformation=true&limitLicense=false&offset=0&number=3",
+  //await http.get("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/searchComplex?includeIngredients=beef%2C+onions%2C+lettuce&ranking=1&fillIngredients=true&instructionsRequired=true&addRecipeInformation=true&limitLicense=false&offset=0&number=3",
+  await http.get(request,
       headers: {"X-RapidAPI-Key": "5cdbcc2fb2msha7c9f188f095aa2p14cf70jsn62c2255d3972"});
+
   if (response.statusCode == 200) {
     // If the call to the server was successful, parse the JSON
-    //debugPrint("loading fine");
-    //debugPrint(response.body);
     print("Number of requests left: " + response.headers["x-ratelimit-requests-remaining"]);
     print("Number of results left: " + response.headers["x-ratelimit-results-remaining"]);
     final recipe = recipeFromJson(response.body);
@@ -29,7 +39,7 @@ import 'package:flutter/services.dart' show rootBundle;
 // Comment this out when you connect the api
 // This uses a local file to get the recipes so we don't go over the request limit
 // for the api
-Future<Recipe> fetchPost() async {
+Future<Recipe> fetchPost(List<String> ingredients) async {
   final response = await rootBundle.loadString('assets/complexSearch.json');
   final recipe = recipeFromJson(response);
   return recipe;
@@ -37,50 +47,104 @@ Future<Recipe> fetchPost() async {
 
 class DetailScreen extends StatelessWidget {
   // Declare a field that holds the id and title
-  final List<AnalyzedInstruction> instructions;
-  final String name;
+  final Result recipe;
 
   // In the constructor, require a recipe
-  DetailScreen({Key key, @required this.instructions, @required this.name}) : super(key: key);
+  DetailScreen({Key key, @required this.recipe}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text(name),
+          title: Text(recipe.title, style: TextStyle(color: Colors.black),),
+          backgroundColor: new Color(0xFF64FFDA),
         ),
-        body: Center(
-          child: ListView.separated(
-              separatorBuilder: (context, index) => Divider(
-                color: Colors.black,
+        body: new Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: <Widget>[
+            new Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  Padding(
+                    padding: EdgeInsets.only(top: 25, bottom: 10),
+                    child: Column(
+                      children: [
+                        Icon(Icons.kitchen, color: Colors.green[500]),
+                        Text('PREP:'),
+                        Text(recipe.preparationMinutes.toString() + " min"),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(top: 25, bottom: 10),
+                    child: Column(
+                      children: [
+                        Icon(Icons.timer, color: Colors.green[500]),
+                        Text('COOK:'),
+                        Text(recipe.cookingMinutes.toString() + " min"),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(top: 25, bottom: 10),
+                    child: Column(
+                      children: [
+                          Icon(Icons.restaurant, color: Colors.green[500]),
+                          Text('SERVINGS:'),
+                          Text(recipe.servings.toString()),
+                      ],
+                    ),
+                  ),
+                ]
+            ),
+            new Divider(
+              color: Colors.black54,
+            ),
+            Padding(
+              padding: EdgeInsets.only(top: 20, left: 5),
+              child: new Text("Directions:",
+                style: new TextStyle(
+                  fontSize: 25,
+                  fontWeight: FontWeight.bold,
+                  decoration: TextDecoration.underline,
+                )
               ),
-              padding: EdgeInsets.all(16.0),
-              itemBuilder: (BuildContext context, int index) {
-                return new Text(instructions[0].steps[index].number.toString()+ ") " + instructions[0].steps[index].step,
-                    style: new TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold
-                    )
-                );
-              },
-              itemCount: instructions[0].steps.length
-          ),
-        )
+            ),
+            new Expanded(
+              child: ListView.separated(
+                separatorBuilder: (context, index) => Divider(
+                  color: Colors.black,
+                ),
+                padding: EdgeInsets.all(16.0),
+                itemBuilder: (BuildContext context, int index) {
+                  return new Text(recipe.analyzedInstructions[0].steps[index].number.toString()+ ") " + recipe.analyzedInstructions[0].steps[index].step,
+                      style: new TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold
+                      )
+                  );
+                },
+                itemCount: recipe.analyzedInstructions[0].steps.length
+              ),
+            ),
+          ],
+        ),
     );
   }
 }
 
 class recipePage extends StatelessWidget{
   final Future<Recipe> post;
+  final List<String> ingredients = ['beef', 'onions', 'lettuce'];
 
-  recipePage({Key key, this.post}) : super(key: key);
+  recipePage({Key key, this.post/*, @required this.ingredients*/}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
         child: FutureBuilder<Recipe>(
-          future: fetchPost(),
+          future: fetchPost(ingredients),
           builder: (context, snapshot) {
             if (snapshot.hasData) {
               return new ListView.separated(
@@ -89,14 +153,12 @@ class recipePage extends StatelessWidget{
                 ),
                 padding: EdgeInsets.all(10.0),
                 itemBuilder: (BuildContext context, int index) {
-                  //return new Card(
                   return InkWell(
                     onTap: () {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          //TitleID temp
-                          builder: (context) => DetailScreen(instructions: snapshot.data.results[index].analyzedInstructions, name: snapshot.data.results[index].title),
+                          builder: (context) => DetailScreen(recipe: snapshot.data.results[index]),
                         ),
                       );
                     },
@@ -109,6 +171,13 @@ class recipePage extends StatelessWidget{
                                 fontWeight: FontWeight.bold
                             )
                         ),
+                        new Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: <Widget>[
+                              new Text("Rating: " + snapshot.data.results[index].spoonacularScore.toString()),
+                              new Text("Ready in " + snapshot.data.results[index].readyInMinutes.toString() + " minutes."),
+                            ]
+                        ),
                         Image.network(snapshot.data.results[index].image)
                       ],
                     ),
@@ -117,7 +186,7 @@ class recipePage extends StatelessWidget{
                 itemCount: snapshot.data == null ? 0 : snapshot.data.number,
               );
             } else if (snapshot.hasError) {
-              debugPrint('errors');
+              debugPrint('errors in RecipePage');
               return Text("${snapshot.error}");
             }
             // By default, show a loading spinner
