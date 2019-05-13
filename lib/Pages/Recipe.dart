@@ -2,8 +2,6 @@ import 'dart:convert';
 
 Recipe recipeFromJson(String str) => Recipe.fromJson(json.decode(str));
 
-String recipeToJson(Recipe data) => json.encode(data.toJson());
-
 class Recipe {
   List<Result> results;
   String baseUri;
@@ -29,15 +27,6 @@ class Recipe {
     totalResults: json["totalResults"],
     processingTimeMs: json["processingTimeMs"],
   );
-
-  Map<String, dynamic> toJson() => {
-    "results": new List<dynamic>.from(results.map((x) => x.toJson())),
-    "baseUri": baseUri,
-    "offset": offset,
-    "number": number,
-    "totalResults": totalResults,
-    "processingTimeMs": processingTimeMs,
-  };
 }
 
 class Result {
@@ -173,51 +162,6 @@ class Result {
     usedIngredients: new List<SedIngredient>.from(json["usedIngredients"].map((x) => SedIngredient.fromJson(x))),
     unusedIngredients: new List<SedIngredient>.from(json["unusedIngredients"].map((x) => SedIngredient.fromJson(x))),
   );
-
-  Map<String, dynamic> toJson() => {
-    "vegetarian": vegetarian,
-    "vegan": vegan,
-    "glutenFree": glutenFree,
-    "dairyFree": dairyFree,
-    "veryHealthy": veryHealthy,
-    "cheap": cheap,
-    "veryPopular": veryPopular,
-    "sustainable": sustainable,
-    "weightWatcherSmartPovars": weightWatcherSmartPovars,
-    "gaps": gapsValues.reverse[gaps],
-    "lowFodmap": lowFodmap,
-    "ketogenic": ketogenic,
-    "whole30": whole30,
-    "preparationMinutes": preparationMinutes == null ? null : preparationMinutes,
-    "cookingMinutes": cookingMinutes == null ? null : cookingMinutes,
-    "sourceUrl": sourceUrl,
-    "spoonacularSourceUrl": spoonacularSourceUrl,
-    "aggregateLikes": aggregateLikes,
-    "spoonacularScore": spoonacularScore,
-    "healthScore": healthScore,
-    "creditText": creditText == null ? null : creditText,
-    "sourceName": sourceName == null ? null : sourceName,
-    "pricePerServing": pricePerServing,
-    "id": id,
-    "title": title,
-    "readyInMinutes": readyInMinutes,
-    "servings": servings,
-    "image": image,
-    "imageType": imageTypeValues.reverse[imageType],
-    "cuisines": new List<dynamic>.from(cuisines.map((x) => x)),
-    "dishTypes": new List<dynamic>.from(dishTypes.map((x) => x)),
-    "diets": new List<dynamic>.from(diets.map((x) => x)),
-    "occasions": new List<dynamic>.from(occasions.map((x) => x)),
-    "winePairing": winePairing.toJson(),
-    "analyzedInstructions": new List<dynamic>.from(analyzedInstructions.map((x) => x.toJson())),
-    "creditsText": creditsText == null ? null : creditsText,
-    "usedIngredientCount": usedIngredientCount,
-    "missedIngredientCount": missedIngredientCount,
-    "likes": likes,
-    "missedIngredients": new List<dynamic>.from(missedIngredients.map((x) => x.toJson())),
-    "usedIngredients": new List<dynamic>.from(usedIngredients.map((x) => x.toJson())),
-    "unusedIngredients": new List<dynamic>.from(unusedIngredients.map((x) => x.toJson())),
-  };
 }
 
 class AnalyzedInstruction {
@@ -233,11 +177,6 @@ class AnalyzedInstruction {
     name: json["name"],
     steps: new List<Step>.from(json["steps"].map((x) => Step.fromJson(x))),
   );
-
-  Map<String, dynamic> toJson() => {
-    "name": name,
-    "steps": new List<dynamic>.from(steps.map((x) => x.toJson())),
-  };
 }
 
 class Step {
@@ -262,14 +201,6 @@ class Step {
     equipment: new List<Ent>.from(json["equipment"].map((x) => Ent.fromJson(x))),
     length: json["length"] == null ? null : Length.fromJson(json["length"]),
   );
-
-  Map<String, dynamic> toJson() => {
-    "number": number,
-    "step": step,
-    "ingredients": new List<dynamic>.from(ingredients.map((x) => x.toJson())),
-    "equipment": new List<dynamic>.from(equipment.map((x) => x.toJson())),
-    "length": length == null ? null : length.toJson(),
-  };
 }
 
 class Ent {
@@ -288,12 +219,6 @@ class Ent {
     name: json["name"],
     image: json["image"],
   );
-
-  Map<String, dynamic> toJson() => {
-    "id": id,
-    "name": name,
-    "image": image,
-  };
 }
 
 class Length {
@@ -309,11 +234,6 @@ class Length {
     number: json["number"],
     unit: unitValues.map[json["unit"]],
   );
-
-  Map<String, dynamic> toJson() => {
-    "number": number,
-    "unit": unitValues.reverse[unit],
-  };
 }
 
 enum Unit { MINUTES }
@@ -381,22 +301,6 @@ class SedIngredient {
     image: json["image"],
     extendedName: json["extendedName"] == null ? null : json["extendedName"],
   );
-
-  Map<String, dynamic> toJson() => {
-    "id": id,
-    "amount": amount,
-    "unit": unit,
-    "unitLong": unitLong,
-    "unitShort": unitShort,
-    "aisle": aisle,
-    "name": name,
-    "original": original,
-    "originalString": originalString,
-    "originalName": originalName,
-    "metaInformation": new List<dynamic>.from(metaInformation.map((x) => x)),
-    "image": image,
-    "extendedName": extendedName == null ? null : extendedName,
-  };
 }
 
 class WinePairing {
@@ -415,12 +319,6 @@ class WinePairing {
     pairingText: json["pairingText"] == null ? null : json["pairingText"],
     productMatches: json["productMatches"] == null ? null : new List<ProductMatch>.from(json["productMatches"].map((x) => ProductMatch.fromJson(x))),
   );
-
-  Map<String, dynamic> toJson() => {
-    "pairedWines": pairedWines == null ? null : new List<dynamic>.from(pairedWines.map((x) => x)),
-    "pairingText": pairingText == null ? null : pairingText,
-    "productMatches": productMatches == null ? null : new List<dynamic>.from(productMatches.map((x) => x.toJson())),
-  };
 }
 
 class ProductMatch {
@@ -457,18 +355,6 @@ class ProductMatch {
     score: json["score"].toDouble(),
     link: json["link"],
   );
-
-  Map<String, dynamic> toJson() => {
-    "id": id,
-    "title": title,
-    "description": description,
-    "price": price,
-    "imageUrl": imageUrl,
-    "averageRating": averageRating,
-    "ratingCount": ratingCount,
-    "score": score,
-    "link": link,
-  };
 }
 
 class EnumValues<T> {

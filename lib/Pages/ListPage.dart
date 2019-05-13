@@ -1,41 +1,21 @@
-import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:kitchen_assist/authprovider.dart';
-import 'package:kitchen_assist/auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:kitchen_assist/Pages/RecipePage.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 class ListPage extends StatefulWidget {
   const ListPage({this.onSignedOut});
   final VoidCallback onSignedOut;
 
+
   @override
   createState() => new ListPageState();
 }
 class ListPageState extends State<ListPage>{
-  int currentTab = 0;
-  ListPage page1;
-  recipePage page2;
-  List<Widget> pages;
-  Widget currentPage;
   String id;
   List<String> foods = [];
   final db = Firestore.instance;
   final _formKey = GlobalKey<FormState>();
   String name;
-
-  BaseAuth auth;
-  Future<void> _signOut(BuildContext context) async {
-
-    try {
-      final BaseAuth auth = AuthProvider.of(context).auth;
-      await auth.signOut();
-      widget.onSignedOut();
-    } catch (e) {
-      print(e);
-    }
-  }
 
   TextEditingController _controller = new TextEditingController();
 
@@ -112,7 +92,7 @@ class ListPageState extends State<ListPage>{
   }
 
   void deleteData(DocumentSnapshot doc) async {
-    FirebaseUser user = await FirebaseAuth.instance.currentUser();
+    //FirebaseUser user = await FirebaseAuth.instance.currentUser();
     //await db.collection('users').document(user.uid).updateData(
         //FieldValueType.arrayUnion)
     setState(() => id = null);

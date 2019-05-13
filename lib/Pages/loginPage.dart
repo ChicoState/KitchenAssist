@@ -4,7 +4,6 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 
 String id;
 final db = Firestore.instance;
-final _formKey = GlobalKey<FormState>();
 String name;
 String FoodName;
 var b;
